@@ -1,0 +1,7 @@
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+a{text-decoration: none; color: black;}
+li{list-style: none;}
+.fontS1{font-size: 1.5rem;}
+.fontS2{font-size: 2rem;}
