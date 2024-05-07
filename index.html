@@ -61,9 +61,9 @@
             padding: 1rem;
             box-sizing: border-box;
             position: absolute;
-            margin: auto;
+            margin: auto; /* 진짜 중요!! 바깥여백 똑같이 그렇이간 가운데 정렬 */
             left:0; right:0;
-            top:0; bottom:0;
+            top:10vw; bottom:10vw;
         }
         .popupshow #popupform{
             display: block;
@@ -73,7 +73,16 @@
 <body class="popupshow">
     <div id="popupform">
         여기 폼태그 만든다.
+        <button>닫기</button>
+        
     </div>
+    <script>
+        document.querySelector("#popupform button").addEventListener('click', function(){
+            document.body.classList =""; 
+            // =뒤에 아무것도 없어. class를 없애버리라는 뜻
+            // 바디가 아닌 다른 곳의 클래스틑 잡는다면 querySelector('.popupshow').classList="";로 가야한다.
+        })
+    </script>
 </body>
 </html>
 <script>
