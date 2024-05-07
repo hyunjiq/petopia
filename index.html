@@ -68,20 +68,43 @@
         .popupshow #popupform{
             display: block;
         }
+        form li p{
+            display: none;
+        }
+        input[type='text']:focus + p{
+            display: block;
+        }
+        img[src$="1.jpg"]{
+            display: none;
+        }
+        a[href="#none"]{
+            display: none;
+        }
     </style>
 </head>
 <body class="popupshow">
+    
     <div id="popupform">
-        여기 폼태그 만든다.
+        <form action="데이터저장할 페이지" name="db명과 같은 이름으로 한다">
+            <!-- <input type="image" src="./img/btn.jpg">-->
+            <ul>
+                <li>
+                    <label for="wr_name">성함</label>
+                    <input type="text" name="wr_name" placeholder="한글명만" id="wr_name">
+                    <p>한글 이름만 반드시 쓰셔야해요.</p>
+                    </p>
+                </li>
+                <li></li>
+                <li></li>
+            </ul>
+            <button type="button">작성하기</button>
+        </form>
         <button>닫기</button>
         
     </div>
     <script>
         document.querySelector("#popupform button").addEventListener('click', function(){
-            document.body.classList =""; 
-            // =뒤에 아무것도 없어. class를 없애버리라는 뜻
-            // 바디가 아닌 다른 곳의 클래스틑 잡는다면 querySelector('.popupshow').classList="";로 가야한다.
-        })
+            document.querySelector(".popupshow").classList =""; })
     </script>
 </body>
 </html>
