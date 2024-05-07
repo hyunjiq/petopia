@@ -43,35 +43,26 @@
     <link rel="stylesheet" href="./css/je.css">
     <link rel="stylesheet" href="./css/hj.css">
     <title>WAYO</title>
+    <style>
+        .popupshow:before{
+            content: "";
+            position:fixed;
+            left:0; right:0;
+            top:0; bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        #popupform{
+            display:none;
+        }
+        .popupshow #popupform{
+            display: block;
+        }
+    </style>
 </head>
-<body>
-    <header id="hd" class="d-flex justify-content-between align-items-center mx-5 my-2">
-        <h1 class="mb-0"><a href="#"><img class="logo_img" src="./img/logo.png" alt="와요로고"></a></h1>
-        <ul class="d-flex gnb mb-0 p-0">
-            <li class="mx-3"><a href="">펫시터가 와요</a></li>
-            <li class="mx-3"><a href="">훈련사</a></li>
-            <li class="mx-3"><a href="">플레이스</a></li>
-            <li class="mx-3"><a href="">사회공헌</a></li>
-            <li class="mx-3"><a href="">커뮤니티</a></li>
-            <li class="mx-3"><a href="">펫트너</a></li>
-        </ul>
-        <ul class="d-flex lnb mb-0 p-0">
-            <li class="mx-2"><a href="#"><i class="bi bi-search"></i></a></li>
-            <li class="mx-2"><a href="#"><i class="bi bi-person"></i></a></li>
-        </ul>
-    </header>    
-    <section id="main_slide"></section>
-    <section id="main_service"></section>
-    <section id="live_review"></section>
-    <section id="with_place"></section>
-    <section id="social_program"></section>    
-    <section id="form_tag"></section>
-    <section id="app_download"></section>
-    <aside></aside>     
-    <footer>
-        <div class="sns"></div>
-        <div class="footer_txt"></div>
-    </footer>
+<body class="popupshow">
+    <div id="popupform">
+        여기 폼태그 만든다.
+    </div>
 </body>
 </html>
 <script>
