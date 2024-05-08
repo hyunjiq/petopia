@@ -1,0 +1,66 @@
+.spNews{
+    list-style: none;
+}
+
+.text{
+    position: absolute;
+    left:20px;
+    bottom:10px;
+    color:white;
+    font-size: 30px;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev{
+    position: absolute;
+    color: white;
+    margin-top:120px;
+}
+
+.swiper-button-prev{
+    left:600px;
+}
+
+
+ #jeSwiper{
+    border-radius: 12px;
+    margin-right: 20px;
+    height:346px;
+}
+
+
+.sp-text{
+    font-size: 10px;
+}
+
+.sp-style:hover{
+    text-decoration: underline;
+}
+
+.box{
+    border-radius: 12px;
+    background-color:#B5C9FF;
+    padding: 8px 0;
+    margin-bottom:13px;
+}
+.libox{
+    height:60px;
+    margin-bottom:13px;
+    background-color: #F7F8FA;
+    border-radius: 12px;
+    padding-right: 10px;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after{
+    font-size:2rem;
+}
+
+.slide-overlay{
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 검정색에 투명도 조절 */
+}

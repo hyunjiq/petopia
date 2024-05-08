@@ -43,70 +43,9 @@
     <link rel="stylesheet" href="./css/je.css">
     <link rel="stylesheet" href="./css/hj.css">
     <title>WAYO</title>
-    <style>
-        .popupshow:before{
-            content: "";
-            position:fixed;
-            left:0; right:0;
-            top:0; bottom: 0;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-        #popupform{
-            display:none;
-            background-color: white;
-            /* 제한범위 정하기 */
-            min-width: 280px;
-            max-width: 600px;
-            width: 50vw;
-            padding: 1rem;
-            box-sizing: border-box;
-            position: absolute;
-            margin: auto; /* 진짜 중요!! 바깥여백 똑같이 그렇이간 가운데 정렬 */
-            left:0; right:0;
-            top:10vw; bottom:10vw;
-        }
-        .popupshow #popupform{
-            display: block;
-        }
-        form li p{
-            display: none;
-        }
-        input[type='text']:focus + p{
-            display: block;
-        }
-        img[src$="1.jpg"]{
-            display: none;
-        }
-        a[href="#none"]{
-            display: none;
-        }
-    </style>
-</head>
-<body class="popupshow">
     
-    <div id="popupform">
-        <form action="데이터저장할 페이지" name="db명과 같은 이름으로 한다">
-            <!-- <input type="image" src="./img/btn.jpg">-->
-            <ul>
-                <li>
-                    <label for="wr_name">성함</label>
-                    <input type="text" name="wr_name" placeholder="한글명만" id="wr_name">
-                    <p>한글 이름만 반드시 쓰셔야해요.</p>
-                    </p>
-                </li>
-                <li></li>
-                <li></li>
-            </ul>
-            <button type="button">작성하기</button>
-        </form>
-        <button>닫기</button>
-        
-    </div>
-    <script>
-        document.querySelector("#popupform > button").addEventListener('click', function(){
-            document.querySelector(".popupshow").classList =""; })
-    </script>
-
+</head>
+<body>
     <header id="hd" class="d-flex justify-content-between align-items-center mx-5 my-2">
         <h1 class="mb-0"><a href="#"><img class="logo_img" src="./img/logo.png" alt="와요로고"></a></h1>
         <ul class="d-flex gnb mb-0 p-0">
@@ -126,7 +65,80 @@
     <section id="main_service"></section>
     <section id="live_review"></section>
     <section id="with_place"></section>
-    <section id="social_program"></section>    
+
+
+    <section id="social_program">
+        <div class="container">
+            <h2>사회 공헌 프로그램</h2>
+            <div class="row">
+                <div class="d-flex px-0" style="width:700px;">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper" id="jeSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide-overlay"></div>
+                                <div class="text">유기견 봉사활동</div>
+                                <img src="./img/img_je/sp_volunteer.jpg" alt="">
+
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="slide-overlay"></div>
+                                <div class="text">배우 김효진x와요 특별한 인터뷰</div>
+                                <img src="./img/img_je/sp_interview.jpg" alt="">
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="slide-overlay"></div>
+                                <div class="text">유기동물 보호소 산책봉사</div>
+                                <img src="./img/img_je/sp_walkingvolunteer.jpg" alt="">
+                            </div>
+
+                        </div>
+                        <!-- 스와이퍼 이동버튼 -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        
+                    </div>
+
+                </div>
+
+                <div class="col-md-5">
+                    <div class="d-flex justify-content-between align-items-center px-3 box">
+                    <h4>프로그램 일정</h4>
+                    <span><a href=""><h6>더보기</h6></a></span>
+                    </div>
+                   
+                        <ul class="spNews px-0 pb-0">
+                            <li class=""><a href="#" class="libox ps-4 d-flex justify-content-between align-items-center sp-style"><span class="sp-text">2024.03.12</span>
+                                <span class="me-5">국제 강아지의 날 봉사활동자 모집</span><span class="px-2"></span></a>
+                            </li>
+
+                            <li><a href="#" class="libox ps-4 d-flex justify-content-between align-items-center sp-style"><span class="sp-text">2024.04.06</span>
+                                <span class="me-5">서울시 유기견 보호소 봉사활동</span><span class="px-2"></span></a>
+                            </li>
+
+                            <li><a href="#" class="libox ps-4 d-flex justify-content-between align-items-center sp-style"><span class="sp-text">2024.04.28</span>
+                                <span class="me-5">반려동물 인식 교육 프로그램 안내</span><span class="px-2"></span></a>
+                            </li>
+
+                            <li><a href="#" class="libox ps-4 d-flex justify-content-between align-items-center sp-style"><span class="sp-text">2024.04.04</span>
+                                <span class="me-5">동물 용품 기부에 관한 공지사항</span><span class="px-2"></span></a>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </section> 
+    
+    
+
+
+
+
+
+
+
     <section id="form_tag">
 
 
