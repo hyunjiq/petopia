@@ -1,0 +1,115 @@
+#jeSwiper{
+    border-radius: 12px;
+    margin-right: 20px;
+    height:346px;
+        
+    .sp_text{
+        position: absolute;
+        left:20px;
+        bottom:10px;
+        color:white;
+        font-size: 30px;
+    }
+
+    .slide-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 700px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 검정색에 투명도 조절 */
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev{
+        position: absolute;
+        color: white;
+        margin-top:120px;
+            
+            .swiper-button-prev{
+                left:590px;
+            } 
+            
+            .swiper-button-next::after, .swiper-button-prev::after{
+            font-size:2rem;
+            }
+
+    }
+
+    
+    .box{
+        border-radius: 12px;
+        background-color:#B5C9FF;
+        padding: 8px 0;
+        margin-bottom:13px;  
+            
+            .spNews{
+             list-style: none;
+            } 
+            
+            .libox{
+                height:60px;
+                margin-bottom:13px;
+                background-color: #F7F8FA;
+                border-radius: 12px;
+                padding-right: 10px; 
+                    
+                    .sp-text{
+                        font-size: 10px;
+                    }   
+                    .sp-style:hover{
+                        text-decoration: underline;
+                    }
+
+            }
+    }
+   
+
+   
+}
+
+
+
+
+#jeAppbanner{ 
+    max-width: 1920px;
+    height: 200px;
+    background-color: #6A92FE;
+    
+   .app_come{
+        font-weight: bold; 
+    }
+  
+    .app_down{
+        background-color: #FFFFFF;
+        border-radius: 30px;
+        width: 300px;
+        height: 60px;
+        align-items:center;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    .app_bg1, .app_bg2, .app_bg3 {
+        position: relative;
+        // width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+    
+    .app_bg1 {
+        background-image: url(./img/img_je/bn_cloud1.svg);
+    }
+    
+    .app_bg2 {
+        background-image: url(./img/img_je/bn_animal.svg);
+    
+    }
+    
+    .app_bg3 {
+        background-image: url(./img/img_je/bn_cloud2.svg);
+        margin-top:5px;
+    }
+    
+}
+
