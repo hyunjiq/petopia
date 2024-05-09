@@ -1,5 +1,16 @@
-body{
-    font-family: 'Noto Sans KR', sans-serif;
+body {
+  font-family: "Noto Sans KR", sans-serif;
 }
-a{text-decoration: none; color: black;}
-li{list-style: none;}
+body a {
+  text-decoration: none;
+  color: black;
+}
+body li {
+  list-style: none;
+}
+body h2 {
+  font-family: "Noto Sans KR";
+  color: #333333;
+  font-size: 2rem;
+  font-weight: 600;
+}

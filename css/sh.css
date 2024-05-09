@@ -1,0 +1,15 @@
+#main_service li:hover span {
+  background-color: #2e313b;
+}
+
+#main_service img {
+  border-radius: 12px 12px 0 0;
+}
+#main_service .ms_div {
+  text-align: center;
+  color: white;
+  background-color: #6a92fe;
+  padding: 3rem;
+  display: block;
+  border-radius: 0 0 12px 12px;
+}

@@ -1,0 +1,39 @@
+#main_service li:hover span {
+    background-color: $hovercolor;
+}
+#main_service{
+    img {
+            border-radius: 12px 12px 0 0;
+    }       
+    .ms_div {
+        text-align: center;
+        color: white;
+        background-color: #6a92fe;
+        padding: 3rem;
+        display: block;
+        border-radius: 0 0 12px 12px;
+    }
+}
+#main_slide_sh{
+   
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

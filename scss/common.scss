@@ -1,0 +1,21 @@
+@mixin mainTitle {
+    font-family: 'Noto Sans KR';
+    color:#333333;
+    font-size: 2rem;
+    font-weight: 600;
+} 
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    a{
+        text-decoration: none; color: black;}
+    li{ 
+        list-style: none;}
+    h2{
+     @include mainTitle;}       
+}
+
+$maincolor:#6a92fe;
+$hovercolor : #2e313b;
+$quickcolor: #3D71FF;
+$bgcolor: #D3DFFF;

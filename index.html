@@ -38,10 +38,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- 커스터마이징 -->
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/sh.css">
-    <link rel="stylesheet" href="./css/je.css">
-    <link rel="stylesheet" href="./css/hj.css">
+    <link rel="stylesheet" href="./css/common.min.css">
+    <link rel="stylesheet" href="./css/sh.min.css">
+    <link rel="stylesheet" href="./css/je.min.css">
+    <link rel="stylesheet" href="./css/hj.min.css">
     <title>WAYO</title>
 </head>
 <body>
@@ -60,8 +60,28 @@
             <li class="mx-2"><a href="#"><i class="bi bi-person"></i></a></li>
         </ul>
     </header>    
-    <section id="main_slide"></section>
-    <section id="main_service"></section>
+    <section id="main_slide_sh">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a href=""><img src="./img/img_sh/main1.jpg" alt=""></a>Slide 1</div>
+              <div class="swiper-slide"><a href=""><img src="./img/img_sh/main2.jpg" alt=""></a>Slide 2</div>
+              <div class="swiper-slide"><a href=""><img src="./img/img_sh/main3.jpg" alt=""></a>Slide 3</div>
+            </div>
+              <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section id="main_service" class="container px-0">
+        <h2>주요 서비스</h2>
+        <div class="">
+            <ul class="row px-0">
+                <li class="col-md-3  "><a href="" class="d-block "><img src="./img/img_sh/service1.jpg" class="img-fluid" alt=""><span class="ms_div">방문돌봄</span></a></li>
+                <li class="col-md-3 mt-5"><a href="" class="d-block "><img src="./img/img_sh/service2.jpg" class="img-fluid" alt=""><span class="ms_div">방문산책</span></a></li>
+                <li class="col-md-3  "><a href="" class="d-block "><img src="./img/img_sh/service3.jpg" class="img-fluid" alt=""><span class="ms_div">방문훈련</span></a></li>
+                <li class="col-md-3 mt-5 "><a href="" class="d-block "><img src="./img/img_sh/service4.jpg" class="img-fluid" alt=""><span class="ms_div">더보기</span></a></li>
+            </ul>
+        </div>
+    </section>
     <section id="live_review"></section>
     <section id="with_place"></section>
     <section id="social_program"></section>    
@@ -76,7 +96,7 @@
 </html>
 <script>
     const swiper = new Swiper('.swiper', {
-        autoplay: {delay: 2500, },
+        // autoplay: {delay: 2500, },
         loop: true,
         pagination: {
             el: '.swiper-pagination',
@@ -89,4 +109,6 @@
             el: '.swiper-scrollbar',
         },
     });
+
+    
 </script>
