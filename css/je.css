@@ -1,110 +1,91 @@
-#jeSwiper{
-    border-radius: 12px;
-    margin-right: 20px;
-    height:346px;
+@charset "UTF-8";
+#jeSwiper {
+  border-radius: 12px;
+  margin-right: 20px;
+  height: 346px;
 }
-
-.sp_text{
-    position: absolute;
-    left:20px;
-    bottom:10px;
-    color:white;
-    font-size: 30px;
+#jeSwiper .sp_text {
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+  color: white;
+  font-size: 30px;
 }
-
-.slide-overlay{
- position: absolute;
+#jeSwiper .slide-overlay {
+  position: absolute;
   top: 0;
   left: 0;
   width: 700px;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5); /* 검정색에 투명도 조절 */
+}
+#jeSwiper .swiper-button-next,
+#jeSwiper .swiper-button-prev {
+  position: absolute;
+  color: white;
+  margin-top: 120px;
+}
+#jeSwiper .swiper-button-next .swiper-button-prev,
+#jeSwiper .swiper-button-prev .swiper-button-prev {
+  left: 590px;
+}
+#jeSwiper .swiper-button-next .swiper-button-next::after, #jeSwiper .swiper-button-next .swiper-button-prev::after,
+#jeSwiper .swiper-button-prev .swiper-button-next::after,
+#jeSwiper .swiper-button-prev .swiper-button-prev::after {
+  font-size: 2rem;
+}
+#jeSwiper .box {
+  border-radius: 12px;
+  background-color: #B5C9FF;
+  padding: 8px 0;
+  margin-bottom: 13px;
+}
+#jeSwiper .box .spNews {
+  list-style: none;
+}
+#jeSwiper .box .libox {
+  height: 60px;
+  margin-bottom: 13px;
+  background-color: #F7F8FA;
+  border-radius: 12px;
+  padding-right: 10px;
+}
+#jeSwiper .box .libox .sp-text {
+  font-size: 10px;
+}
+#jeSwiper .box .libox .sp-style:hover {
+  text-decoration: underline;
 }
 
-.swiper-button-next,
-.swiper-button-prev{
-    position: absolute;
-    color: white;
-    margin-top:120px;
+#jeAppbanner {
+  max-width: 1920px;
+  height: 200px;
+  background-color: #6A92FE;
 }
-
-.swiper-button-prev{
-    left:590px;
+#jeAppbanner .app_come {
+  font-weight: bold;
 }
-
-
-.spNews{
-    list-style: none;
+#jeAppbanner .app_down {
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  width: 300px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
-
-.sp-text{
-    font-size: 10px;
+#jeAppbanner .app_bg1, #jeAppbanner .app_bg2, #jeAppbanner .app_bg3 {
+  position: relative;
+  height: 100%;
+  background-size: cover;
 }
-
-.sp-style:hover{
-    text-decoration: underline;
+#jeAppbanner .app_bg1 {
+  background-image: url(./img/img_je/bn_cloud1.svg);
 }
-
-.box{
-    border-radius: 12px;
-    background-color:#B5C9FF;
-    padding: 8px 0;
-    margin-bottom:13px;
+#jeAppbanner .app_bg2 {
+  background-image: url(./img/img_je/bn_animal.svg);
 }
-.libox{
-    height:60px;
-    margin-bottom:13px;
-    background-color: #F7F8FA;
-    border-radius: 12px;
-    padding-right: 10px;
-}
-
-.swiper-button-next::after, .swiper-button-prev::after{
-    font-size:2rem;
-}
-
-
-
-#jeAppbanner{ 
-    max-width: 1920px;
-   height: 200px;
-   background-color: #6A92FE;
-
-}
-
-.app_come{
-   font-weight: bold; 
-}
-
-.app_down{
-   background-color: #FFFFFF;
-   border-radius: 30px;
-   width: 300px;
-   height: 60px;
-   align-items:center;
-   justify-content: center;
-   text-decoration: none;
-}
-
-.app_bg1, .app_bg2, .app_bg3 {
-    position: relative;
-    /* width: 100%; */
-    height: 100%;
-    background-size: cover;
-}
-
-.app_bg1 {
-    background-image: url(./img/img_je/bn_cloud1.svg);
-    background-position: left;
-}
-
-.app_bg2 {
-    background-image: url(./img/img_je/bn_animal.svg);
-
-}
-
-.app_bg3 {
-    background-image: url(./img/img_je/bn_cloud2.svg);
-    margin-top:5px;
-    background-position: right;
+#jeAppbanner .app_bg3 {
+  background-image: url(./img/img_je/bn_cloud2.svg);
+  margin-top: 5px;
 }
