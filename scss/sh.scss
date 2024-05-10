@@ -1,7 +1,49 @@
-#main_service li:hover span {
-    background-color: $hovercolor;
+$maincolor:#6a92fe;
+$hovercolor : #2e313b;
+$quickcolor: #3D71FF;
+$bgcolor: #D3DFFF;
+$lightgray:#f7f8fa;
+
+#main_slide_sh{
+   
+    .swiper {
+            width: 100%;
+            height: 100%;
+        .swiper-slide {
+                    text-align: center;
+                    font-size: 3rem;
+                    background: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                        img {
+                            position: relative;
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                        .slide_txt{
+                                    line-height: 1;
+                                    font-size: 4rem;
+                                    text-align: start;
+                                   }
+                         }
+                        .slide_txt_sm{
+                            line-height: 1;
+                            font-size: 1.3rem;
+                            text-align: start;
+                        }
+    }
 }
-#main_service{
+
+#main_service {
+    li:hover{ 
+        span {
+            background-color: $hovercolor;
+        }
+    }
+
     img {
             border-radius: 12px 12px 0 0;
     }       
@@ -12,28 +54,5 @@
         padding: 3rem;
         display: block;
         border-radius: 0 0 12px 12px;
-    }
-}
-#main_slide_sh{
-   
-    .swiper {
-        width: 100%;
-        height: 100%;
-    }
-
-    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
     }
 }

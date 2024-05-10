@@ -23,6 +23,10 @@
     <!-- 텍스트 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/font.css">
     <!-- 폰트 아이콘 -->
@@ -60,25 +64,47 @@
             <li class="mx-2"><a href="#"><i class="bi bi-person"></i></a></li>
         </ul>
     </header>    
-    <section id="main_slide_sh">
-        <div class="swiper mySwiper">
+    <section id="main_slide_sh" class="w1920 mx-auto">
+        <div class="swiper mySwiper ">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><a href=""><img src="./img/img_sh/main1.jpg" alt=""></a>Slide 1</div>
-              <div class="swiper-slide"><a href=""><img src="./img/img_sh/main2.jpg" alt=""></a>Slide 2</div>
-              <div class="swiper-slide"><a href=""><img src="./img/img_sh/main3.jpg" alt=""></a>Slide 3</div>
+              <div class="swiper-slide">
+                <a href="" class="d-block position-relative">
+                    <img src="./img/img_sh/main1.jpg" alt="" class="img-fluid main_sh">
+                    <div class="position-absolute start-0 bottom-0 p-5 text-white slide_txt">
+                        <p class="mb-0">With My Family</p>
+                        <p>반려동물과 함께하는 삶</p>
+                    </div>
+                </a>
+            </div> 
+              <div class="swiper-slide">
+                <a href="" class="d-block position-relative">
+                    <img src="./img/img_sh/main2.jpg" alt="" class="img-fluid">
+                    <div class="position-absolute start-0 bottom-0 p-5 text-white">
+                        <p class="mb-0 slide_txt">모두가 행복한 공간으로</p>
+                        <p class="mb-0 slide_txt">"와요 WAYO"!</p>
+                        <p class="mb-0 mt-2 slide_txt_sm">“와요 WAYO” 공식 유튜브 리뉴얼!</p>
+                    </div>
+                </a>
+                <iframe class="position-absolute end-0 bottom-0 m-5" width="560" height="315" src="https://www.youtube.com/embed/RYgVKuo9FLM?si=5edNgZ41azD4QiV-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              <div class="swiper-slide">
+                <a href="">
+                    <img src="./img/img_sh/main3.jpg" alt="" class="img-fluid">
+                </a>
+                </div>
             </div>
-              <div class="swiper-pagination"></div>
+              <div class="swiper-pagination position-relative"></div>
         </div>
     </section>
 
-    <section id="main_service" class="container px-0">
+    <section id="main_service" class="container px-0 margin">
         <h2>주요 서비스</h2>
         <div class="">
             <ul class="row px-0">
-                <li class="col-md-3  "><a href="" class="d-block "><img src="./img/img_sh/service1.jpg" class="img-fluid" alt=""><span class="ms_div">방문돌봄</span></a></li>
-                <li class="col-md-3 mt-5"><a href="" class="d-block "><img src="./img/img_sh/service2.jpg" class="img-fluid" alt=""><span class="ms_div">방문산책</span></a></li>
-                <li class="col-md-3  "><a href="" class="d-block "><img src="./img/img_sh/service3.jpg" class="img-fluid" alt=""><span class="ms_div">방문훈련</span></a></li>
-                <li class="col-md-3 mt-5 "><a href="" class="d-block "><img src="./img/img_sh/service4.jpg" class="img-fluid" alt=""><span class="ms_div">더보기</span></a></li>
+                <li class="col-lg-3 col-sm-6 "><a href="" class="d-block "><img src="./img/img_sh/service1.jpg" class="img-fluid" alt=""><span class="ms_div">방문돌봄</span></a></li>
+                <li class="col-lg-3 col-sm-6 mt-5"><a href="" class="d-block "><img src="./img/img_sh/service2.jpg" class="img-fluid" alt=""><span class="ms_div">방문산책</span></a></li>
+                <li class="col-lg-3 col-sm-6 "><a href="" class="d-block "><img src="./img/img_sh/service3.jpg" class="img-fluid" alt=""><span class="ms_div">방문훈련</span></a></li>
+                <li class="col-lg-3 col-sm-6 mt-5 "><a href="" class="d-block "><img src="./img/img_sh/service4.jpg" class="img-fluid" alt=""><span class="ms_div">더보기</span></a></li>
             </ul>
         </div>
     </section>
