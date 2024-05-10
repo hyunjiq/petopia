@@ -25,35 +25,36 @@
   color: white;
   margin-top: 120px;
 }
-#jeSwiper .swiper-button-next .swiper-button-prev,
-#jeSwiper .swiper-button-prev .swiper-button-prev {
+#jeSwiper .swiper-button-prev {
   left: 590px;
 }
-#jeSwiper .swiper-button-next .swiper-button-next::after, #jeSwiper .swiper-button-next .swiper-button-prev::after,
-#jeSwiper .swiper-button-prev .swiper-button-next::after,
-#jeSwiper .swiper-button-prev .swiper-button-prev::after {
+#jeSwiper .swiper-button-next::after,
+#jeSwiper .swiper-button-prev::after {
   font-size: 2rem;
 }
-#jeSwiper .box {
+
+.box {
   border-radius: 12px;
   background-color: #B5C9FF;
   padding: 8px 0;
   margin-bottom: 13px;
 }
-#jeSwiper .box .spNews {
+
+.spNews {
   list-style: none;
 }
-#jeSwiper .box .libox {
+
+.libox {
   height: 60px;
   margin-bottom: 13px;
   background-color: #F7F8FA;
   border-radius: 12px;
   padding-right: 10px;
 }
-#jeSwiper .box .libox .sp-text {
+.libox .sp-text {
   font-size: 10px;
 }
-#jeSwiper .box .libox .sp-style:hover {
+.libox .sp-style:hover {
   text-decoration: underline;
 }
 
