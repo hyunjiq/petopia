@@ -13,7 +13,27 @@ body{
     li{ 
         list-style: none;}
     h2{
-     @include mainTitle;}       
+     @include mainTitle;}  
+     
+@media (max-width :1400px){
+}
+
+@media (max-width :992px) {
+}
+
+@media (max-width: 768px) {
+    .margin {
+        margin-top: 120px; /* 화면 너비가 768px 이하일 때 조절 */
+    }
+    h2{ font-size: 1.5rem;}
+}
+
+@media (max-width: 576px) {
+    .margin {
+        margin-top: 80px; /* 화면 너비가 576px 이하일 때 조절 */
+    }
+    h2{ font-size: 1rem;}
+}     
 }
 
 $maincolor:#6a92fe;
@@ -21,6 +41,7 @@ $hovercolor : #2e313b;
 $quickcolor: #3D71FF;
 $bgcolor: #D3DFFF;
 $lightgray:#f7f8fa;
+
 
 .inner{
     max-width:1400px !important;
@@ -31,16 +52,4 @@ $lightgray:#f7f8fa;
 }
 .margin {
     margin-top: 180px;
-}
-
-@media (max-width: 768px) {
-    .margin {
-        margin-top: 120px; /* 화면 너비가 768px 이하일 때 마진을 조절 */
-    }
-}
-
-@media (max-width: 576px) {
-    .margin {
-        margin-top: 80px; /* 화면 너비가 576px 이하일 때 마진을 조절 */
-    }
 }
