@@ -81,10 +81,12 @@
 
 
 #form_tag{
+    
     form{
         line-height: 200%;
         background-color: lightgray;
         margin-bottom: 180px;
+        max-width: 1920px;
     
         .selectable {
             cursor: pointer;
@@ -95,11 +97,11 @@
             border-radius: 30px;
             text-align: center;  
             
-            .selectable.selected {
-            background-color: #f0f0f0; /* 선택되었을 때의 배경색 */
+           .selectable.selected {
+            background-color: lightblue; /* 선택되었을 때의 배경색 */
             }
-
         }
+ 
 
     
 
