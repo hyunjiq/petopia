@@ -49,27 +49,26 @@
   display: block;
   border-radius: 0 0 12px 12px;
 }
-
 @media (max-width: 1400px) {
-  .ms_div {
+  #main_service .ms_div {
     font-size: 1.2rem;
     padding: 1.8rem;
   }
 }
 @media (max-width: 992px) {
-  .ms_div {
+  #main_service .ms_div {
     font-size: 1rem;
     padding: 1.8rem;
   }
 }
 @media (max-width: 768px) {
-  .ms_div {
+  #main_service .ms_div {
     font-size: 0.85rem;
     padding: 1.5rem;
   }
 }
 @media (max-width: 576px) {
-  .ms_div {
+  #main_service .ms_div {
     font-size: 0.7rem;
     padding: 1rem;
   }
