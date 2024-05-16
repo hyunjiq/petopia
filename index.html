@@ -21,10 +21,10 @@
     <link rel="apple-touch-icon-precomposed" href="/img/desktop_app_wayo.png"> 
     <!-- <meta name="msapplication-TileImage" content="//hantitntn.com/seo/favicon.png" size="270x270" /> -->
     <!-- 텍스트 폰트 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/font.css">
+    <link rel="preconnect" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link href="//fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/font.css">
     <!-- 폰트 아이콘 -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- 초기화 -->
@@ -78,6 +78,18 @@
             </li>
         </ul>
         <ul class="d-flex lnb mb-0 p-0">
+            <li class="mx-2 searchIcon">
+                <a href="#">
+                    <i class="bi bi-search"></i>
+                    <span class="visually-hidden">검색</span>
+                </a>
+            </li>
+            <li class="mx-2 personIcon">
+                <a href="#">
+                    <i class="bi bi-person"></i>
+                    <span class="visually-hidden">로그인</span>
+                </a>
+            </li>
             <li class="mx-2 searchIcon">
                 <a href="#">
                     <i class="bi bi-search"></i>
@@ -394,12 +406,80 @@
 
 
 
-    <aside></aside>     
-    <footer>
-        <div class="sns"></div>
-        <div class="footer_txt"></div>
+    <aside id="quik" class="d-flex align-items-center flex-column">
+        <i id="quikBtn">
+            <img src="/img/hj_img/fixed_dog.png" alt="퀵버튼">
+            <span class="visually-hidden">퀵버튼</span>
+        </i>
+        <ul id="quikMenu" class="d-none px-1 pb-2 mb-0">
+            <li class="my-2 qIcon p-2">
+                <a class="text-white" href="javascript:void(0)">
+                    <i class="bi bi-chat"></i>
+                    <span class="visually-hidden">카톡채팅상담</span>
+                </a>
+            </li>
+            <li class="my-2 qIcon p-2">
+                <a class="text-white" href="javascript:void(0)">
+                    <i class="bi bi-instagram"></i>
+                    <span class="visually-hidden">인스타그램</span>
+                </a>
+            </li>
+        </ul>
+        <div class="top_btn">
+            <a href="#">
+                <i class="bi bi-arrow-up"></i>
+                <span class="visually-hidden">위로가기</span>
+            </a>
+        </div>
+    </aside>
+    <script>
+            const quikBtn = document.getElementById("quikBtn");
+            const quikMenu = document.getElementById("quikMenu");      
+                let status = true;
+                quikBtn.addEventListener("click", function(){
+                    if(status){
+                        quikMenu.classList.remove("d-none");
+                        status = false;
+                    } else {
+                        quikMenu.classList.add("d-none");
+                        status = true;
+                    }
+                });
+            
+    </script>     
+    <footer id="ft">
+        <div class="container d-flex justify-content-between px-0">
+            <div class="ft_right">
+                <ul class="d-flex mb-3 ft_menu ps-0">
+                    <li class="pe-2 border-e"><a href="">고객센터</a></li>
+                    <li class="px-2 border-e"><a href="">개인정보처리방침</a></li>
+                    <li class="px-2 border-e"><a href="">이용약관</a></li>
+                    <li class="ps-2"><a href="">공지사항</a></li>
+                </ul>
+                <div class="ft_info mb-3">
+                    <div class="d-flex">
+                        <p class="mb-0">(주) 펫피플 사업자 등록번호 : 347-87-00837</p>
+                        <p class="mb-0">통신판매업 신고번호 : 제 2017-서울강남-03319</p>
+                    </div>
+                    <p class="mb-0">대표 : 이원복 | 개인정보책임자 : 김태호</p>
+                    <p class="mb-0">주소 : 서울 강남구 삼성동 118-11, 2층 (주식회사 펫피플)</p>
+                    <p class="mb-0">문의 : hello@wayopet.com / 070-4756-2224</p>
+                </div>
+                <p class="ft_copy mb-3">© 2020 Pet People Inc.</p>
+                <ul class="d-flex ft-icon ps-0">
+                    <li class="me-2" ><a class="icon-position" href="javascript:void(0)"><i class="bi bi-chat"></i><span class="visually-hidden">카카오톡</span></a></li>
+                    <li class="me-2"><a href=""><i class="bi bi-youtube"></i><span class="visually-hidden">유튜브</span></a></li>
+                    <li><a href=""><i class="bi bi-instagram"></i><span class="visually-hidden">인스타그램</span></a></li>
+                </ul>
+            </div>
+            <div class="ft_left d-flex align-items-end">
+                <h1><a href="javascript:void(0)"><img src="logo.png" alt=""></a></h1>
+            </div>
+        </div>
     </footer>
 
 </body>
 </html>
 
+
+ 
