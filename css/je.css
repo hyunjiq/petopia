@@ -94,16 +94,18 @@
 #app_download {
   position: relative;
   background-color: #6A92FE;
+  padding: 3.7rem 0;
   background-image: url(//hyunjiq.github.io/petopia/img/img_je/bn_animal.svg);
-  background-repeat: no-repeat; /* 이미지 반복 설정 */
-  background-size: contain; /* 이미지 크기 조절 */
+  background-repeat: no-repeat;
+  background-size: contain;
   background-position: center;
-}
-#app_download #jeAppbanner {
-  padding: 4.3rem 0;
 }
 #app_download #jeAppbanner .app_come {
   font-weight: bold;
+  font-size: 38px;
+}
+#app_download #jeAppbanner .app_come_first {
+  font-size: 28px;
 }
 #app_download #jeAppbanner .app_down {
   background-color: #FFFFFF;
@@ -113,6 +115,8 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
 }
 #app_download:before {
   content: "";
@@ -122,14 +126,18 @@
   top: 0;
   bottom: 0;
   background-repeat: no-repeat;
+  background-size: cover;
   background-image: url(//hyunjiq.github.io/petopia/img/img_je/bn_cloud1.svg);
 }
 #app_download:after {
   content: "";
-  background-image: url(//hyunjiq.github.io/petopia/img/img_je/bn_cloud2.svg);
   position: absolute;
-  right: -30px;
+  right: 0px;
   width: 300px;
-  bottom: 50px;
+  top: 0;
+  bottom: 0px;
+  background-size: 400px 300px;
   background-repeat: no-repeat;
+  background-image: url(//hyunjiq.github.io/petopia/img/img_je/bn_cloud1.svg);
+  transform: scaleX(-1);
 }
