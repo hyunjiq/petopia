@@ -70,12 +70,11 @@
   width: 109px;
   height: 30px;
   align-items: center !important;
-  padding-bottom: 0.5rem 0;
   border-radius: 30px;
-  text-align: center;
+  text-align: center !important;
 }
-#form_tag form .selectable .selectable.selected {
-  background-color: lightblue; /* 선택되었을 때의 배경색 */
+#form_tag form .selectable.selected {
+  background-color: lightgray; /* 선택되었을 때의 배경색 */
 }
 #form_tag form .form_box {
   border-radius: 9px;
@@ -83,6 +82,10 @@
   margin: 12px 20px;
   padding: 15px;
   display: flex;
+}
+#form_tag form .form_box .hourSelect_text {
+  font-size: 15px;
+  font-weight: bold;
 }
 #form_tag form .form_box .forLabel {
   margin-right: 10px;

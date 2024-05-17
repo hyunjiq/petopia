@@ -250,29 +250,77 @@
                     <label for="calender" class="forLabel">선택일자</label>
                     <input class="for_input" type="text" id="calender" name="calender" placeholder="날짜를 선택하세요">
                 </div>
-    
-                <div class="form_box">
+                    <!-- <div class="form_box">
                     <label for="input2" class="forLabel">희망시간</label>
-                    <input  class="for_input" type="time" id="input2" name="input2" min="00:00" max="23:59" step="3600">
-                </div>
+                    <input  class="for_input" type="time" id="input2" name="input2" min="10:00" max="19:00" step="3600">
+                </div> -->
+
+             <div class="form_box">
+                    <label for="input2" class="forLabel">희망시간</label>
+                    <select class="for_input" id="hourSelectStart" name="hourSelect">
+                        <!-- <option value="">시간을 선택해주세요</option> -->
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                    </select>
+                    <span class="mx-1 hourSelect_text">:</span>
+                    <select class="for_input" id="miuhourSelectStart" name="hourSelect">
+                        <option value="00">00</option>
+                        <option value="30">30</option>
+                    </select>
+                    <span class="mx-1 hourSelect_text">~</span>
+                    <select class="for_input" id="hourSelectEnd" name="hourSelect">
+                        <!-- <option value="">시간을 선택해주세요</option> -->
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                    </select>
+                    <span class="mx-1 hourSelect_text">:</span>
+                    <select class="for_input" id="miuhourSelectEnd" name="hourSelect">
+                        <option value="00">00</option>
+                        <option value="30">30</option>
+                    </select>
+                
+                </div> 
+            
+               
             </div>
         
             <!-- 반려동물, 반려동물 수 -->
             <div class="d-flex">
                 <div class="form_box">
-                    <label for="dropdown1" class="forLabel">반려동물</label>
-                    <select  class="for_input" id="dropdown1" name="dropdown1" placeholder="종류">
-                        <option value="" selected disabled hidden>종류</option>
-                        <option value="option1">강아지</option>
-                        <option value="option2">고양이</option>
-                        <option value="option3">모두</option>
-                       
+                    <label for="petSelect" class="forLabel">반려동물</label>
+                    <select class="for_input" id="petSelect" name="petSelect" placeholder="종류">
+                        <option value="">종류</option>
+                        <option value="강아지">강아지</option>
+                        <option value="고양이">고양이</option>
+                        <option value="모두">모두</option>
                     </select>
                 </div>
-    
                 <div class="form_box">
-                    <label for="input4" class="forLabel">반려동물 수</label>
-                    <input  class="for_input" type="text" id="input4" name="input4" placeholder="모두 몇마리인가요? ex.1마리">
+                    <label for="petCount" class="forLabel">반려동물 수</label>
+                    <select class="for_input" id="petCount" name="petCount">
+                        <option value="">모두 몇마리인가요?</option>
+                        <option value="1">1마리</option>
+                        <option value="2">2마리</option>
+                        <option value="3">3마리</option>
+                        <option value="4">4마리</option>
+                        <option value="5+">5마리 이상</option>
+                    </select>
                 </div>
             </div>
         
@@ -281,10 +329,10 @@
                 <div class="form_box">
                     <label for="input7" class="forLabel">필요서비스</label>
                     <div class="d-flex align-items-center justify-content-end">
-                        <span class="selectable ms-3">#산책</span>
-                        <span class="selectable ms-2">#목욕</span>
-                        <span class="selectable ms-2">#건강검진</span>
-                        <span class="selectable ms-2">#돌봄</span>
+                        <span class="selectable ms-2 pb-1">#산책</span>
+                        <span class="selectable ms-1 pb-1">#목욕</span>
+                        <span class="selectable ms-1 pb-1">#건강검진</span>
+                        <span class="selectable ms-1 pb-1">#돌봄</span>
                     </div>
                 </div>
             </div>
@@ -296,6 +344,7 @@
                     <input  class="for_input" type="text" id="input1" name="input1" placeholder="주소를 입력하세요">
                 </div>
             </div>
+ 
         
             <!-- 보호자이름, 연락처 -->
             <div class="d-flex">
@@ -305,7 +354,7 @@
                 </div>
                 
                 <div class="form_box">
-                    <label for="input6"  class="forLabel">연락처</label>
+                    <label for="input6" class="forLabel">연락처</label>
                     <input class="for_input" type="text" id="input6" name="input6" onkeypress="return isNumberKey(event)" placeholder="연락처를 적어주세요">
                 </div>
             </div>
@@ -344,46 +393,95 @@
                     dateFormat: "yy-mm-dd"
                 });
             });
-            
-            // 글자만 적을 수 있음
-            function isCharacterKey(evt) {
-                var charCode = (evt.which) ? evt.which : event.keyCode;
-                if ((charCode >= 65 && charCode <= 90) || (charCode >= 97 && charCode <= 122))
-                    return true;
-                return false;
+     
+    // 숫자만 입력할 수 있음 
+    function isNumberKey(evt) {
+        var charCode = (evt.which) ? evt.which : event.keyCode;
+        if (charCode > 31 && (charCode < 48 || charCode > 57))
+            return false;
+        return true;
+    }
+
+    // 입력 필드에 숫자만 입력하도록 이벤트 리스너 추가
+    document.getElementById("input6").addEventListener("keypress", function(event) {
+        if (!isNumberKey(event)) {
+            event.preventDefault();
+        }
+    });
+
+    // 글자만 입력할 수 있음 
+    function isCharacterKey(evt) {
+        var charCode = (evt.which) ? evt.which : event.keyCode;
+        if ((charCode >= 65 && charCode <= 90) || (charCode >= 97 && charCode <= 122))
+            return true;
+        return false;
+    }
+
+    // 입력 필드에 글자만 입력하도록 이벤트 리스너 추가
+    document.getElementById("input5").addEventListener("keypress", function(event) {
+        if (!isCharacterKey(event)) {
+            event.preventDefault();
+        }
+    });
+</script>
+
+<script>
+    // 선택 가능한 요소에 이벤트 리스너 추가
+    var selectableElements = document.querySelectorAll('.selectable');
+    selectableElements.forEach(function(element) {
+        element.addEventListener('click', function() {
+            // 선택된 요소에 selected 클래스 추가 또는 제거
+            if (element.classList.contains('selected')) {
+                element.classList.remove('selected');
+            } else {
+                element.classList.add('selected');
             }
-    
-            //숫자만 적을 수 있음 
-            function isNumberKey(evt) {
-                var charCode = (evt.which) ? evt.which : event.keyCode;
-                if (charCode > 31 && (charCode < 48 || charCode > 57))
-                    return false;
-                return true;
-            }
-            function isNumberKey(evt) {
-                var charCode = (evt.which) ? evt.which : event.keyCode;
-                if (charCode > 31 && (charCode < 48 || charCode > 57))
-                    return false;
-                return true;
-            }
-            // 주소
-    
-    
-        </script>
-        <script>
-            // 선택 가능한 요소에 이벤트 리스너 추가
-            var selectableElements = document.querySelectorAll('.selectable');
-            selectableElements.forEach(function(element) {
-                element.addEventListener('click', function() {
-                    // 선택된 요소에 selected 클래스 추가 또는 제거
-                    if (element.classList.contains('selected')) {
-                        element.classList.remove('selected');
-                    } else {
-                        element.classList.add('selected');
-                    }
+        });
+    });
+</script>
+        <!-- 희망시간 자바스크립트 -->
+       <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var hourSelect = document.getElementById('hourSelect');
+                var minuteSelect = document.getElementById('minuteSelect');
+        
+                hourSelect.addEventListener('change', function() {
+                    // 시간 선택 시 분을 00으로 고정
+                    var selectedHour = hourSelect.value;
+                    var formattedTime = selectedHour + ':00';
+                    console.log('선택된 시간:', formattedTime);
                 });
             });
-        </script>
+        </script> 
+
+         <!-- 반려동물 종류 -->
+         <script> 
+             document.addEventListener('DOMContentLoaded', function() {
+                    var petSelect = document.getElementById('petSelect');
+                
+                    petSelect.addEventListener('change', function() {
+                        var selectedPet = petSelect.value;
+                        console.log('선택된 반려동물:', selectedPet);
+                    });
+                });</script>
+       <!-- 반려동물 수 -->
+       <script>
+        // 반려동물 수 선택 시 텍스트 변경
+        document.addEventListener('DOMContentLoaded', function() {
+            var petCountSelect = document.getElementById('petCount');
+            var placeholderOption = petCountSelect.querySelector('option[value=""]');
+    
+            petCountSelect.addEventListener('change', function() {
+                var selectedOption = petCountSelect.value;
+                if (selectedOption === "") {
+                    placeholderOption.textContent = "모두 몇마리인가요?";
+                } else {
+                    placeholderOption.textContent = "반려동물 수";
+                }
+            });
+        });
+    </script>
+  
     </section>
     
     <section id="app_download" class="app_bg1 app_bg2 app_bg3">
@@ -476,6 +574,3 @@
 
 </body>
 </html>
-
-
- 

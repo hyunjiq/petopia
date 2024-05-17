@@ -93,15 +93,15 @@
             width:109px;
             height: 30px;
             align-items: center !important;
-            padding-bottom :0.5rem 0;
+            // padding-bottom :1rem;
             border-radius: 30px;
-            text-align: center;  
+            text-align: center !important;  
             
-           .selectable.selected {
-            background-color: lightblue; /* 선택되었을 때의 배경색 */
-            }
+           
         }
- 
+        .selectable.selected {
+            background-color: lightgray; /* 선택되었을 때의 배경색 */
+            }
 
     
 
@@ -113,6 +113,10 @@
             padding:15px;
             display: flex;
             
+            .hourSelect_text{
+                font-size:15px;
+                font-weight: bold;
+            }
             .forLabel{
             margin-right: 10px;  
             
