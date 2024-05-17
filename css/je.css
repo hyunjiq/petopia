@@ -63,6 +63,7 @@
   line-height: 200%;
   background-color: lightgray;
   margin-bottom: 180px;
+  max-width: 1920px;
 }
 #form_tag form .selectable {
   cursor: pointer;
@@ -74,7 +75,7 @@
   text-align: center;
 }
 #form_tag form .selectable .selectable.selected {
-  background-color: #f0f0f0; /* 선택되었을 때의 배경색 */
+  background-color: lightblue; /* 선택되었을 때의 배경색 */
 }
 #form_tag form .form_box {
   border-radius: 9px;
@@ -90,10 +91,16 @@
   border: none;
 }
 
-#app_download #jeAppbanner {
-  max-width: 1920px;
-  height: 200px;
+#app_download {
+  position: relative;
   background-color: #6A92FE;
+  background-image: url(//hyunjiq.github.io/petopia/img/img_je/bn_animal.svg);
+  background-repeat: no-repeat; /* 이미지 반복 설정 */
+  background-size: contain; /* 이미지 크기 조절 */
+  background-position: center;
+}
+#app_download #jeAppbanner {
+  padding: 4.3rem 0;
 }
 #app_download #jeAppbanner .app_come {
   font-weight: bold;
@@ -107,18 +114,22 @@
   justify-content: center;
   text-decoration: none;
 }
-#app_download #jeAppbanner .app_bg1, #app_download #jeAppbanner .app_bg2, #app_download #jeAppbanner .app_bg3 {
-  position: relative;
-  height: 100%;
-  background-size: cover;
+#app_download:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 300px;
+  top: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-image: url(//hyunjiq.github.io/petopia/img/img_je/bn_cloud1.svg);
 }
-#app_download #jeAppbanner .app_bg1 {
-  background-image: url(/petopia/img/img_je/bn_cloud1.svg);
-}
-#app_download #jeAppbanner .app_bg2 {
-  background-image: url(/petopia/img/img_je/bn_animal.svg);
-}
-#app_download #jeAppbanner .app_bg3 {
-  background-image: url(/petopia/img/img_je/bn_cloud2.svg);
-  margin-top: 5px;
+#app_download:after {
+  content: "";
+  background-image: url(//hyunjiq.github.io/petopia/img/img_je/bn_cloud2.svg);
+  position: absolute;
+  right: -30px;
+  width: 300px;
+  bottom: 50px;
+  background-repeat: no-repeat;
 }
