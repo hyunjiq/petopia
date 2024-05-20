@@ -1,4 +1,5 @@
 #hd{
+    width: 100vw;
     z-index: 100;
     h1{
         img{
@@ -70,13 +71,29 @@
     .lnb{
         .searchIcon{
             font-size: 1.3rem;
-            line-height: 1.1;
+            line-height: 1.85;
+            .form-show{
+                right: 7rem;
+                .a-search{                    
+                display: block;
+                padding-left:.5rem;
+                }
+                .search-pc{
+                    border:0;
+                    &:focus{                        
+                    outline: none !important;
+                    box-shadow: none !important;
+                    }
+                }
+            }
         }
         .personIcon{
             font-size: 1.6rem;
-            line-height: 0;
         }
     }
+}
+#with_place{
+    background: #D3DFFF;
 }
 #quik{
     position: fixed;

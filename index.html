@@ -54,7 +54,7 @@
 
 </head>
 <body>
-    <header id="hd" class="d-flex justify-content-between position-relative bg-white align-items-center px-5">
+    <header id="hd" class="d-flex justify-content-between position-fixed bg-white align-items-center px-5">
         <h1 class="mb-0"><a class="d-block" href="#"><img class="logo_img d-block" src="/img/logo.png" alt="와요로고"></a></h1>
         <ul class="d1 d-flex gnb mb-0 p-0 ">
             <li class="d1_li position-relative">
@@ -106,10 +106,21 @@
             </li>
         </ul>
         <ul class="d-flex lnb mb-0 p-0">
-            <li class="mx-2 searchIcon">
-                <a href="#">
+            <li class="mx-2 searchIcon d-flex">
+                <form class="form-show search-form d-none border me-3 position-absolute">
+                    <a class="a-search" href="#">
+                        <i class="bi bi-search"></i>
+                        <span class="visually-hidden">검색</span>
+                    </a>
+                    <input type="text" class="form-control search-pc" placeholder="검색어 입력">
+                </form>
+                <a class="btn-a a-search" href="#">
                     <i class="bi bi-search"></i>
                     <span class="visually-hidden">검색</span>
+                </a>
+                <a class="a-x d-none" href="#">
+                    <i class="bi bi-x-lg"></i>
+                    <span class="visually-hidden">닫기</span>
                 </a>
             </li>
             <li class="mx-2 personIcon">
@@ -119,6 +130,30 @@
                 </a>
             </li>
         </ul>
+        <script>
+            
+                const sIcon = document.querySelector(".btn-a");
+                const xIcon = document.querySelector(".a-x");
+                const fShow = document.querySelector(".form-show");
+
+                sIcon.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    sIcon.classList.add("d-none");
+                    xIcon.classList.remove("d-none");
+                    fShow.classList.remove("d-none");
+                    fShow.classList.add("d-flex");
+                });
+
+                xIcon.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    sIcon.classList.remove("d-none");
+                    xIcon.classList.add("d-none");
+                    fShow.classList.remove("d-flex");
+                    fShow.classList.add("d-none");
+                });
+
+
+        </script>
     </header> 
     <section id="main_slide_sh" class="w1920 mx-auto">
         <div class="swiper mySwiper pb-5">
@@ -174,7 +209,11 @@
         </div>
     </section>
     <section id="live_review"></section>
-    <section id="with_place"></section>
+    <section id="with_place" class="margin">
+        <div class="container px-0">
+            <img src="./img/hj_img/sectionPlace.jpg" alt="" class="sectionPlace">
+        </div>        
+    </section>
     <section id="social_program">
         <div class="container" >
             <h2>사회 공헌 프로그램</h2>

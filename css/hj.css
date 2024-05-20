@@ -1,4 +1,5 @@
 #hd {
+  width: 100vw;
   z-index: 100;
 }
 #hd h1 img {
@@ -60,11 +61,28 @@
 }
 #hd .lnb .searchIcon {
   font-size: 1.3rem;
-  line-height: 1.1;
+  line-height: 1.85;
+}
+#hd .lnb .searchIcon .form-show {
+  right: 7rem;
+}
+#hd .lnb .searchIcon .form-show .a-search {
+  display: block;
+  padding-left: 0.5rem;
+}
+#hd .lnb .searchIcon .form-show .search-pc {
+  border: 0;
+}
+#hd .lnb .searchIcon .form-show .search-pc:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
 #hd .lnb .personIcon {
   font-size: 1.6rem;
-  line-height: 0;
+}
+
+#with_place {
+  background: #D3DFFF;
 }
 
 #quik {
