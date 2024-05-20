@@ -1,3 +1,76 @@
+#jeMainswiper{
+
+    background-color: #F7F8FA;
+    height: 700px;
+    max-width:1920px;
+
+ 
+    .mainbannerLeft{
+    padding:160px 50px 114px 85px;
+   }
+   .mainbanner_Video, .maincollabo{
+        position: relative;
+        border-radius: 350px 0 0 0;
+        border: none;
+        right:0;
+        bottom:0;
+        
+    }
+    .main_back{
+        background-image: url(//hyunjiq.github.io/petopia/img/img_je/main_dog.jpg);
+        border-radius: 350px 0 0 0;
+        border: none;
+      
+        padding-top: 53.36%;
+        height: 0;
+        width: 1242px;
+        background-size: contain; 
+        background-repeat: no-repeat;
+    }
+
+    .mainbannerText_en{
+        font-family: Quicksand;
+        line-height: 70px;
+        color:#3D71FF;
+        font-weight: bold;
+        font-size: 65px;
+    }
+    .mainbannerText_kr{
+        font-family: Noto+Sans+KR;
+        line-height: 23px;
+        color:#3D71FF;
+        font-size: 20px;
+
+    }
+    .mainbannerText{
+        font-family: Noto+Sans+KR;
+        line-height: 51px;
+        font-weight: bold;
+        color:#3D71FF;
+        font-size: 48px;
+    }
+    .mainActing,.mainvideo{
+        text-decoration: none;
+        color:#ffff;
+        background-color: #6A92FE;
+        border-radius: 30px;
+        padding: 1rem;
+        width: 212px;
+        height:58px;
+    }
+    .mainbanner_text{
+        font-family: Noto+Sans+KR;
+        font-size: 16px;
+        line-height: 19px;
+        color: #666666;
+
+    }
+
+}
+
+
+
+
 #social_program #jeSwiper{
     border-radius: 12px;
     margin-right: 20px;
@@ -74,66 +147,32 @@
    
 
 
-
-
-
-
-
-
 #form_tag{
-    
-    form{
-        line-height: 200%;
-        background-color: lightgray;
-        margin-bottom: 180px;
-        max-width: 1920px;
-    
-        .selectable {
-            cursor: pointer;
-            width:109px;
-            height: 30px;
-            align-items: center !important;
-            // padding-bottom :1rem;
-            border-radius: 30px;
-            text-align: center !important;  
-            
-           
-        }
-        .selectable.selected {
-            background-color: lightgray; /* 선택되었을 때의 배경색 */
-            }
+    max-width:1920px;
+    height:868px;
+    background-color: #D3DFFF;
 
-    
+    .form_img{
+        position: relative;
+        border-radius: 30px;
+        border: none;
+        width:100%;
+    }
+    .form_text{
 
-
-        .form_box{
-            border-radius: 9px;
-            background-color: white;
-            margin:12px 20px;
-            padding:15px;
-            display: flex;
-            
-            .hourSelect_text{
-                font-size:15px;
-                font-weight: bold;
-            }
-            .forLabel{
-            margin-right: 10px;  
-            
-                .for_input{
-                    border: none;}
-        }
-        }
-    
-      
-
-    }   
+        text-align: center;
+    }
 }
+
+
+
+
 
 #app_download{
     position: relative;
     background-color: #6A92FE;
     padding: 3.7rem 0;
+    
     #jeAppbanner{ 
    
         .app_come{
@@ -197,5 +236,3 @@
 
     
 } 
-
-   

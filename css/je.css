@@ -1,4 +1,65 @@
 @charset "UTF-8";
+#jeMainswiper {
+  background-color: #F7F8FA;
+  height: 700px;
+  max-width: 1920px;
+}
+#jeMainswiper .mainbannerLeft {
+  padding: 160px 50px 114px 85px;
+}
+#jeMainswiper .mainbanner_Video, #jeMainswiper .maincollabo {
+  position: relative;
+  border-radius: 350px 0 0 0;
+  border: none;
+  right: 0;
+  bottom: 0;
+}
+#jeMainswiper .main_back {
+  background-image: url(//hyunjiq.github.io/petopia/img/img_je/main_dog.jpg);
+  border-radius: 350px 0 0 0;
+  border: none;
+  padding-top: 53.36%;
+  height: 0;
+  width: 1242px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#jeMainswiper .mainbannerText_en {
+  font-family: Quicksand;
+  line-height: 70px;
+  color: #3D71FF;
+  font-weight: bold;
+  font-size: 65px;
+}
+#jeMainswiper .mainbannerText_kr {
+  font-family: NotoSansKR;
+  line-height: 23px;
+  color: #3D71FF;
+  font-size: 20px;
+}
+#jeMainswiper .mainbannerText {
+  font-family: NotoSansKR;
+  line-height: 51px;
+  font-weight: bold;
+  color: #3D71FF;
+  font-size: 48px;
+}
+#jeMainswiper .mainActing, #jeMainswiper .mainvideo {
+  text-decoration: none;
+  color: white;
+  background-color: #6A92FE;
+  border-radius: 30px;
+  padding: 1rem;
+  width: 212px;
+  height: 58px;
+}
+#jeMainswiper .mainbanner_text {
+  font-family: NotoSansKR;
+  font-size: 16px;
+  line-height: 19px;
+  color: #666666;
+}
+
 #social_program #jeSwiper {
   border-radius: 12px;
   margin-right: 20px;
@@ -59,39 +120,19 @@
   text-decoration: underline;
 }
 
-#form_tag form {
-  line-height: 200%;
-  background-color: lightgray;
-  margin-bottom: 180px;
+#form_tag {
   max-width: 1920px;
+  height: 868px;
+  background-color: #D3DFFF;
 }
-#form_tag form .selectable {
-  cursor: pointer;
-  width: 109px;
-  height: 30px;
-  align-items: center !important;
+#form_tag .form_img {
+  position: relative;
   border-radius: 30px;
-  text-align: center !important;
-}
-#form_tag form .selectable.selected {
-  background-color: lightgray; /* 선택되었을 때의 배경색 */
-}
-#form_tag form .form_box {
-  border-radius: 9px;
-  background-color: white;
-  margin: 12px 20px;
-  padding: 15px;
-  display: flex;
-}
-#form_tag form .form_box .hourSelect_text {
-  font-size: 15px;
-  font-weight: bold;
-}
-#form_tag form .form_box .forLabel {
-  margin-right: 10px;
-}
-#form_tag form .form_box .forLabel .for_input {
   border: none;
+  width: 100%;
+}
+#form_tag .form_text {
+  text-align: center;
 }
 
 #app_download {
