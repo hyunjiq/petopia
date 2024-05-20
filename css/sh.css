@@ -73,3 +73,7 @@
     padding: 1rem;
   }
 }
+
+#live_review img {
+  width: 122%;
+}

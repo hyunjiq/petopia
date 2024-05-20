@@ -105,11 +105,11 @@
         </ul>
     </header> 
     <section id="main_slide_sh" class="w1920 mx-auto">
-        <div class="swiper mySwiper pb-5">
+        <div id="swiper_sh" class="swiper mySwiper pb-5">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <a href="" class="d-block position-relative">
-                        <img src="./img/img_sh/main1.jpg" alt="" class="img-fluid main_sh">
+                        <img src="./img/img_sh/main1.jpg" alt="메인이미지" class="img-fluid main_sh">
                         <div class="position-absolute start-0 bottom-0 p-5 text-white slide_txt">
                             <p>With My Family</p>
                             <p>반려동물과 함께하는 삶</p>
@@ -118,23 +118,27 @@
                 </div> 
                 <div class="swiper-slide">
                     <a href="" class="d-block position-relative">
-                        <img src="./img/img_sh/main2.jpg" alt="" class="img-fluid main_sh">
+                        <img src="./img/img_sh/main2.jpg" alt="메인이미지 유튜브 리뉴얼" class="img-fluid main_sh">
                         <div class="position-absolute start-0 bottom-0 p-5 text-white">
                             <p class="mb-0 slide_txt">모두가 행복한 공간으로</p>
                             <p class="mb-0 slide_txt">"와요 WAYO"!</p>
                             <p class="mb-0 mt-2 slide_txt_sm">“와요 WAYO” 공식 유튜브 리뉴얼!</p>
                         </div>
                     </a>
-                    <iframe class="position-absolute end-0 bottom-0 m-5" width="560" height="315" src="https://www.youtube.com/embed/RYgVKuo9FLM?si=5edNgZ41azD4QiV-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class="position-absolute end-0 bottom-0 m-5" width="560" height="315" 
+                    src="https://www.youtube.com/embed/RYgVKuo9FLM?si=5edNgZ41azD4QiV-" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div class="swiper-slide ">
                     <a href="" class="d-block position-relative">
-                        <img src="./img/img_sh/main3.jpg" alt="" class="img-fluid main_sh">
+                        <img src="./img/img_sh/main3.jpg" alt="메인이미지 콜라보" class="img-fluid main_sh">
                         <div class="position-absolute start-0 bottom-0 p-5 text-white slide_txt" >
                             <div class="d-flex align-items-center" style="margin-bottom:-1.5rem;">
-                                <img src="./img/logo.png" alt="" class="d-block main3_sh me-3">
+                                <img src="./img/logo.png" alt="와요 로고" class="d-block main3_sh me-3">
                                 <i class="bi bi-x-lg fs-1"></i>
-                                <img src="./img/img_sh/laughing.logo.png" alt="" class="d-block main3_sh" >
+                                <img src="./img/img_sh/laughing.logo.png" alt="래핑찰리 로고" class="d-block main3_sh" >
                             </div>
                             <p class="mb-0 slide_txt">5월 한정 콜라보 이벤트</p>
                             <p class="mb-0 mt-2 slide_txt_sm">와요 10시간 이상 사용자에게 래핑찰리 15ml 선착순 증정!</p>
@@ -146,22 +150,47 @@
         </div>
     </section>
 
-    <section id="main_service" class="container margin">
+    <section id="main_service" class="margin">
+        <div class="container ">
         <h2>주요 서비스</h2>
-        <div class="">
             <ul class="row px-0">
-                <li class="col-lg-3 col-6 mb-3"><a href="" class="d-block "><img src="./img/img_sh/service1.jpg" class="w-100" alt=""><span class="ms_div">방문돌봄</span></a></li>
-                <li class="col-lg-3 col-6 mt-lg-5 mb-3"><a href="" class="d-block "><img src="./img/img_sh/service2.jpg" class="w-100" alt=""><span class=" ms_div">방문산책</span></a></li>
-                <li class="col-lg-3 col-6"><a href="" class="d-block "><img src="./img/img_sh/service3.jpg" class="w-100" alt=""><span class="ms_div">방문훈련</span></a></li>
-                <li class="col-lg-3 col-6 mt-lg-5"><a href="" class="d-block "><img src="./img/img_sh/service4.jpg" class="w-100" alt=""><span class="ms_div">더보기</span></a></li>
+                <li class="col-lg-3 col-6 mb-3">
+                    <a href="" class="d-block ">
+                        <img src="./img/img_sh/service1.jpg" class="w-100" alt="돌봄">
+                        <span class="ms_div">방문돌봄</span>
+                    </a>
+                </li>
+                <li class="col-lg-3 col-6 mt-lg-5 mb-3">
+                    <a href="" class="d-block ">
+                        <img src="./img/img_sh/service2.jpg" class="w-100" alt="산책">
+                        <span class=" ms_div">방문산책</span>
+                    </a>
+                </li>
+                <li class="col-lg-3 col-6">
+                    <a href="" class="d-block ">
+                        <img src="./img/img_sh/service3.jpg" class="w-100" alt="훈련">
+                        <span class="ms_div">방문훈련</span>
+                    </a>
+                </li>
+                <li class="col-lg-3 col-6 mt-lg-5">
+                    <a href="" class="d-block ">
+                        <img src="./img/img_sh/service4.jpg" class="w-100" alt="더보기">
+                        <span class="ms_div">더보기</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </section>
-    <section id="live_review"></section>
+    <section id="live_review" class="margin ">
+        <div class="container">
+            <h2>실시간 후기</h2>
+            <img src="/img/img_sh/live_review.jpg" alt="" class="">
+        </div>
+    </section>
     <section id="with_place"></section>
 
 
-    <section id="social_program">
+    <section id="social_program" class="margin">
         <div class="container" >
             <h2>사회 공헌 프로그램</h2>
             <div class="row">
@@ -224,7 +253,7 @@
             </div>
         </div>
         <script>
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('#swiper_sh', {
         autoplay: {delay: 2500, },
         loop: true,
         pagination: {
