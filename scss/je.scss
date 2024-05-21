@@ -1,167 +1,247 @@
-#social_program #jeSwiper{
-    border-radius: 12px;
-    margin-right: 20px;
-    height:346px;
-    margin-bottom:180px;
+#main_slide_je{
+    padding-top:65px;
+    #je_Mainswiper{
+
+    background-color: #F7F8FA;
+    height: 700px;
+    // max-width:1920px;
+
+ 
+    .mainbannerLeft{
+    padding:160px 48px 84px 85px;
+   }
+   .mainbanner_Video,.main_back, .maincollabo{
+        position: relative;
+        border-radius: 350px 0 0 0;
+        border: none;
+        right:0;
+        bottom:0;
+        float: none;
         
-    .sp_text{
+    }
+
+    
+        .main_back{
+        background-image: url(/img/img_je/main_littledog.jpg);
+        border-radius: 350px 0 0 0;
+        border: none;
+        background-size: contain; 
+        background-repeat: no-repeat;
+        padding: 0;
+        margin: 0;
+        width: 1242px;
+        height: 700px;
+        box-sizing: border-box;
+        }
+
+  
+
+    .mainbannerText_en{
+        font-family: Quicksand;
+        line-height: 70px;
+        color:#3D71FF;
+        font-weight: bold;
+        font-size: 65px;
+    }
+    .mainbannerText_kr{
+        font-family: Noto+Sans+KR;
+        line-height: 23px;
+        color:#3D71FF;
+        font-size: 20px;
+
+    }
+    .mainbannerText{
+        font-family: Noto+Sans+KR;
+        line-height: 51px;
+        font-weight: bold;
+        color:#3D71FF;
+        font-size: 48px;
+    }
+    .mainActing,.mainvideo{
+        text-decoration: none;
+        color:#ffff;
+        background-color: #6A92FE;
+        border-radius: 30px;
+        padding: 1rem;
+        width: 212px;
+        height:58px;
+    }
+    .mainvideo{
+        padding:1rem;
+    }
+    .mainbanner_text{
+        font-family: Noto+Sans+KR;
+        font-size: 16px;
+        line-height: 19px;
+        color: #666666;
+
+    }
+
+}}
+
+
+
+
+#social_program {
+    .sp_je {
+        width: 700px;
+    }
+
+    #jeSwiper {
+        border-radius: 12px;
+        margin-right: 20px;
+        height: 346px;
+        margin-bottom: 180px;
+    }
+
+    .sp_text {
         position: absolute;
-        left:20px;
-        bottom:10px;
-        color:white;
+        left: 20px;
+        bottom: 10px;
+        color: white;
         font-size: 30px;
     }
 
-    .slide-overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 700px;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* 검정색에 투명도 조절 */
+    .slide-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 700px;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* 검정색에 투명도 조절 */
     }
 
     .swiper-button-next,
-    .swiper-button-prev{
+    .swiper-button-prev {
         position: absolute;
         color: white;
-        margin-top:120px;
-            
-           
-            
+        margin-top: 120px;
+    }
 
-    } 
-    .swiper-button-prev{
-                left:590px;
-            } 
-    .swiper-button-next::after, 
-    .swiper-button-prev::after{
-                font-size:2rem;
-                }
-            
+    .swiper-button-prev {
+        left: 590px;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        font-size: 2rem;
+    }
 }
 
-    
-    .box{
-        border-radius: 12px;
-        background-color:#B5C9FF;
-        padding: 8px 0;
-        margin-bottom:13px;  
-            
-            
-    }
-    .spNews{
-        list-style: none;
-    } 
-            
-    .libox{
-     height:60px;
-     margin-bottom:13px;
-     background-color: #F7F8FA;
-     border-radius: 12px;
-     padding-right: 10px; 
-                    
-        .sp-text{
-        font-size: 10px;
-        }   
-        .sp-style:hover{
-        text-decoration: underline;
-        }
+.box {
+    border-radius: 12px;
+    background-color: #b5c9ff;
+    padding: 8px 0;
+    margin-bottom: 13px;
+}
 
-    }
-   
+.spNews {
+    list-style: none;
+}
 
-   
+.libox {
+    height: 60px;
+    margin-bottom: 13px;
+    background-color: #f7f8fa;
+    border-radius: 12px;
+    padding-right: 10px;
+}
 
+.libox .sp-text {
+    font-size: 10px;
+}
 
-
-
-
-
+.libox .sp-style:hover {
+    text-decoration: underline;
+}
 
 
 #form_tag{
-    form{
-        line-height: 200%;
-        background-color: lightgray;
-        margin-bottom: 180px;
-    
-        .selectable {
-            cursor: pointer;
-            width:109px;
-            height: 30px;
-            align-items: center !important;
-            padding-bottom :0.5rem 0;
-            border-radius: 30px;
-            text-align: center;  
-            
-            .selectable.selected {
-            background-color: #f0f0f0; /* 선택되었을 때의 배경색 */
-            }
 
-        }
+    height:868px;
+    background-color: #D3DFFF;
 
-    
-
-
-        .form_box{
-            border-radius: 9px;
-            background-color: white;
-            margin:12px 20px;
-            padding:15px;
-            display: flex;
-            
-            .forLabel{
-            margin-right: 10px;  
-            
-                .for_input{
-                    border: none;}
-        }
-        }
-    
-      
-
-    }   
-}
-
-#app_download #jeAppbanner{ 
-    max-width: 1920px;
-    height: 200px;
-    background-color: #6A92FE;
-    
-   .app_come{
-        font-weight: bold; 
-    }
-  
-    .app_down{
-        background-color: #FFFFFF;
-        border-radius: 30px;
-        width: 300px;
-        height: 60px;
-        align-items:center;
-        justify-content: center;
-        text-decoration: none;
-    }
-
-    .app_bg1, .app_bg2, .app_bg3 {
+    .form_img{
         position: relative;
-        // width: 100%;
-        height: 100%;
-        background-size: cover;
+        border-radius: 30px;
+        border: none;
+        width:100%;
     }
-    
-    .app_bg1 {
-        background-image: url(/petopia/img/img_je/bn_cloud1.svg);
+    .form_text{
+
+        text-align: center;
     }
-    
-    .app_bg2 {
-        background-image: url(/petopia/img/img_je/bn_animal.svg);
-    
-    }
-    
-    .app_bg3 {
-        background-image: url(/petopia/img/img_je/bn_cloud2.svg);
-        margin-top:5px;
-    }
-    
 }
+
+
+
+
+
+#app_download{
+    position: relative;
+    background-color: #6A92FE;
+    padding: 3.7rem 0;
+    
+    #jeAppbanner{ 
+   
+        .app_come{
+                font-weight: bold; 
+                font-size:38px;
+        
+            }
+            .app_come_first{
+                font-size:28px;
+            }
+        
+            .app_down{
+                background-color: #FFFFFF;
+                border-radius: 30px;
+                width: 300px;
+                height: 60px;
+                align-items:center;
+                justify-content: center;
+                text-decoration: none;
+                font-size: 24px;
+                font-weight: bold;
+            }
+  
+
+    
+    }
+    &:before {
+        content:"";
+        position:absolute;
+        left:0;
+        width: 300px;
+        top: 0;
+        bottom:0;
+        background-repeat: no-repeat; 
+        background-size: cover;
+        background-image: url(//hyunjiq.github.io/petopia/img/img_je/bn_cloud1.svg);
+   
+    }
+ 
+        background-image: url(//hyunjiq.github.io/petopia/img/img_je/bn_animal.svg);
+        background-repeat: no-repeat; 
+        background-size: contain; 
+        background-position: center;
+    
+    
+
+    
+   &:after {
+        content:"";
+       
+        position:absolute;
+        right:0px;
+        width: 300px;
+        top: 0;
+        bottom:0px;
+        background-size: 400px 300px;
+        background-repeat: no-repeat;    
+        background-image: url(//hyunjiq.github.io/petopia/img/img_je/bn_cloud1.svg);
+        transform:scaleX(-1)
+    }
+
+    
+} 
