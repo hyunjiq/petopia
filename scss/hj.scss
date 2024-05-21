@@ -1,17 +1,103 @@
 #hd{
+    width: 100vw;
+    z-index: 100;
+    h1{
+        img{
+            height: 2rem;
+        }
+    }
+    .d1{
+        &:hover{
+            &:before{
+                content: "";
+                background-color: #fffffff0;
+                border-top: 1px solid #6A92FE;
+                position: absolute;
+                top: 100%;
+                left: 0; right: 0;
+                height: 205px;
+            }
+            .d1_li{ 
+                &:hover{
+                    .d1_a{color: #6A92FE;}
+                }
+                .d2{
+                    .d2_li{
+                        &:hover{
+                            a{
+                                color:#6A92FE;
+                            }
+                        }                        
+                    }                    
+                    padding: 1rem 0; 
+                    max-height: 205px;                                       
+                }
+            }
+        }   
+        &:before{
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0; right: 0;
+            height: 0px;
+            overflow: hidden;
+            transition: .5s;
+            border-top: 1px solid transparent;
+        }
+        .d1_li{
+            padding:1rem 2rem;           
+            .d1_a{
+                font-size: 1.4rem;
+            }
+            .d2{
+                top:100%;
+                transform: translateX(-50%);
+                left: 50%;
+                max-height: 0;
+                overflow: hidden;
+                transition: .5s;
+                .d2_li{
+                    white-space: nowrap;
+                    text-align: center;
+                    margin: 0.5rem 0;
+                    letter-spacing: 0.085rem;
+                    a{
+                        font-size: 1.05rem;
+                    }
+                }
+            }
+        }
+    }
     .lnb{
         .searchIcon{
             font-size: 1.3rem;
-            line-height: 1.1;
+            line-height: 1.85;
+            .form-show{
+                right: 7rem;
+                .a-search{                    
+                display: block;
+                padding-left:.5rem;
+                }
+                .search-pc{
+                    border:0;
+                    &:focus{                        
+                    outline: none !important;
+                    box-shadow: none !important;
+                    }
+                }
+            }
         }
         .personIcon{
             font-size: 1.6rem;
-            line-height: 0;
         }
     }
 }
+#with_place{
+    background: #D3DFFF;
+}
 #quik{
     position: fixed;
+    z-index: 100;
     bottom: 2rem;
     right: 1rem;   
     #quikBtn{
@@ -53,6 +139,12 @@
 
 }
 #ft{
+    .ft_menu{
+        .ft_menu_li{
+            border-right: 1px solid #666;
+            line-height: 1;
+        }
+    }
     .ft-icon{
         li{
             background: #ddd;
@@ -60,6 +152,9 @@
             line-height: 1;
             border-radius: .5rem;
             padding: .3rem;
+            a{
+                color: #999;
+            }
         }
     }
 }

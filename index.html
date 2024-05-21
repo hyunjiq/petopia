@@ -16,9 +16,9 @@
     <meta property="og:image:height" content="630" class="next-head">
     <meta property="og:see_also" content="//blog.naver.com/wayopet" class="next-head">
     <!-- 파비콘 -->
-    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" /> 
-    <link rel="apple-touch-icon" href="/img/desktop_app_wayo.png" /> 
-    <link rel="apple-touch-icon-precomposed" href="/img/desktop_app_wayo.png"> 
+    <link rel="shortcut icon" type="image/x-icon" href="/petopia/img/favicon.ico" /> 
+    <link rel="apple-touch-icon" href="/petopia/img/desktop_app_wayo.png" /> 
+    <link rel="apple-touch-icon-precomposed" href="/petopia/img/desktop_app_wayo.png"> 
     <!-- <meta name="msapplication-TileImage" content="//hantitntn.com/seo/favicon.png" size="270x270" /> -->
     <!-- 텍스트 폰트 -->
     <link rel="preconnect" href="//fonts.googleapis.com">
@@ -54,46 +54,73 @@
 
 </head>
 <body>
-
-    <header id="hd" class="d-flex justify-content-between align-items-center mx-5 my-2">
-        <h1 class="mb-0"><a href="#"><img class="logo_img" src="/img/logo.png" alt="와요로고"></a></h1>
-        <ul class="d-flex gnb mb-0 p-0">
-            <li class="mx-3">
-                <a href="">펫시터가 와요</a>
+    <header id="hd" class="d-flex justify-content-between position-fixed bg-white align-items-center px-5">
+        <h1 class="mb-0"><a class="d-block" href="#"><img class="logo_img d-block" src="/img/logo.png" alt="와요로고"></a></h1>
+        <ul class="d1 d-flex gnb mb-0 p-0 ">
+            <li class="d1_li position-relative">
+                <a class="d1_a" href="">펫시터가 와요</a>
+                <ul class="d2 position-absolute ps-0">
+                    <li class="d2_li"><a href="">방문 돌봄</a></li>
+                    <li class="d2_li"><a href="">집중 호스피스</a></li>
+                    <li class="d2_li"><a href="">펫 플래닛</a></li>
+                    <li class="d2_li"><a href="">웨딩케어</a></li>
+                    <li class="d2_li"><a href="">안심 픽업&드랍</a></li>
+                </ul>
             </li>
-            <li class="mx-3">
-                <a href="">훈련사</a>
+            <li class="d1_li position-relative">
+                <a class="d1_a" href="">훈련사</a>
+                <ul class="d2 position-absolute ps-0">
+                    <li class="d2_li"><a href="">훈련사 소개</a></li>
+                    <li class="d2_li"><a href="">훈련사에게 물어봐</a></li>
+                </ul>
             </li>
-            <li class="mx-3">
-                <a href="">플레이스</a>
+            <li class="d1_li position-relative">
+                <a class="d1_a" href="">플레이스</a>
+                <ul class="d2 position-absolute ps-0">
+                    <li class="d2_li"><a href="">입점 문의</a></li>
+                    <li class="d2_li"><a href="">매장 찾기</a></li>
+                </ul>
             </li>
-            <li class="mx-3">
-                <a href="">사회공헌</a>
+            <li class="d1_li position-relative">
+                <a class="d1_a" href="">사회공헌</a>
+                <ul class="d2 position-absolute ps-0">
+                    <li class="d2_li"><a href="">봉사활동</a></li>
+                    <li class="d2_li"><a href="">지식 나눔</a></li>
+                    <li class="d2_li"><a href="">심리 상담</a></li>
+                </ul>
             </li>
-            <li class="mx-3">
-                <a href="">커뮤니티</a>
+            <li class="d1_li position-relative">
+                <a class="d1_a" href="">커뮤니티</a>
+                <ul class="d2 position-absolute ps-0">
+                    <li class="d2_li"><a href="">실시간 후기</a></li>
+                    <li class="d2_li"><a href="">구독 서비스</a></li>
+                </ul>
             </li>
-            <li class="mx-3">
-                <a href="">펫트너</a>
+            <li class="d1_li position-relative">
+                <a class="d1_a" href="">펫트너</a>
+                <ul class="d2 position-absolute ps-0">
+                    <li class="d2_li"><a href="">펫시터 지원</a></li>
+                    <li class="d2_li"><a href="">훈련사 지원</a></li>
+                    <li class="d2_li"><a href="">산책 케어 지원</a></li>
+                </ul>
             </li>
         </ul>
         <ul class="d-flex lnb mb-0 p-0">
-            <li class="mx-2 searchIcon">
-                <a href="#">
+            <li class="mx-2 searchIcon d-flex">
+                <form class="form-show search-form d-none border me-3 position-absolute">
+                    <a class="a-search" href="#">
+                        <i class="bi bi-search"></i>
+                        <span class="visually-hidden">검색</span>
+                    </a>
+                    <input type="text" class="form-control search-pc" placeholder="검색어 입력">
+                </form>
+                <a class="btn-a a-search" href="#">
                     <i class="bi bi-search"></i>
                     <span class="visually-hidden">검색</span>
                 </a>
-            </li>
-            <li class="mx-2 personIcon">
-                <a href="#">
-                    <i class="bi bi-person"></i>
-                    <span class="visually-hidden">로그인</span>
-                </a>
-            </li>
-            <li class="mx-2 searchIcon">
-                <a href="#">
-                    <i class="bi bi-search"></i>
-                    <span class="visually-hidden">검색</span>
+                <a class="a-x d-none" href="#">
+                    <i class="bi bi-x-lg"></i>
+                    <span class="visually-hidden">닫기</span>
                 </a>
             </li>
             <li class="mx-2 personIcon">
@@ -103,6 +130,30 @@
                 </a>
             </li>
         </ul>
+        <script>
+            
+                const sIcon = document.querySelector(".btn-a");
+                const xIcon = document.querySelector(".a-x");
+                const fShow = document.querySelector(".form-show");
+
+                sIcon.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    sIcon.classList.add("d-none");
+                    xIcon.classList.remove("d-none");
+                    fShow.classList.remove("d-none");
+                    fShow.classList.add("d-flex");
+                });
+
+                xIcon.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    sIcon.classList.remove("d-none");
+                    xIcon.classList.add("d-none");
+                    fShow.classList.remove("d-flex");
+                    fShow.classList.add("d-none");
+                });
+
+
+        </script>
     </header> 
 
     <section id="main_slide_je">
@@ -215,7 +266,11 @@
             <img src="/img/img_sh/live_review.jpg" alt="" class="">
         </div>
     </section>
-    <section id="with_place"></section>
+    <section id="with_place" class="margin">
+        <div class="container px-0">
+            <img src="./img/hj_img/sectionPlace.jpg" alt="" class="sectionPlace">
+        </div>        
+    </section>
 
     <section id="social_program" class="margin">
         <div class="container">
@@ -322,11 +377,9 @@
             
         </div> 
     </section>
-
-
     <aside id="quik" class="d-flex align-items-center flex-column">
         <i id="quikBtn">
-            <img src="/img/hj_img/fixed_dog.png" alt="퀵버튼">
+            <img src="//hyunjiq.github.io/petopia/img/hj_img/fixed_dog.png" alt="퀵버튼">
             <span class="visually-hidden">퀵버튼</span>
         </i>
         <ul id="quikMenu" class="d-none px-1 pb-2 mb-0">
@@ -365,14 +418,14 @@
                 });
             
     </script>     
-    <footer id="ft">
+    <footer id="ft" class="py-5">
         <div class="container d-flex justify-content-between px-0">
             <div class="ft_right">
                 <ul class="d-flex mb-3 ft_menu ps-0">
-                    <li class="pe-2 border-e"><a href="">고객센터</a></li>
-                    <li class="px-2 border-e"><a href="">개인정보처리방침</a></li>
-                    <li class="px-2 border-e"><a href="">이용약관</a></li>
-                    <li class="ps-2"><a href="">공지사항</a></li>
+                    <li class="pe-2 ft_menu_li"><a href="">고객센터</a></li>
+                    <li class="px-2 ft_menu_li"><a href="">개인정보처리방침</a></li>
+                    <li class="px-2 ft_menu_li"><a href="">이용약관</a></li>
+                    <li class="ps-2 ft_menu_li border-0"><a href="">공지사항</a></li>
                 </ul>
                 <div class="ft_info mb-3">
                     <div class="d-flex">
@@ -391,7 +444,7 @@
                 </ul>
             </div>
             <div class="ft_left d-flex align-items-end">
-                <h1><a href="javascript:void(0)"><img src="logo.png" alt=""></a></h1>
+                <h1><a href="javascript:void(0)"><img src="//hyunjiq.github.io/petopia/img/logo.png" alt=""></a></h1>
             </div>
         </div>
     </footer>
