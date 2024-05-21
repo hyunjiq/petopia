@@ -106,10 +106,10 @@
     </header> 
 
     <section id="main_slide_je">
-        <div class="swiper mySwiper" id="jeMainswiper">
+        <div class="swiper mySwiper" id="je_Mainswiper">
             <div class="swiper-wrapper">
                 <!--메인배너1번 유기견 홍보-->
-              <div class="swiper-slide d-flex align-items-center p-0">
+              <div class="swiper-slide d-flex align-items-center justify-content-between">
                     <div class="mainbannerLeft"> 
                         <div class="mb-4">
                             <h1 class="mainbannerText_en">Would you be </h1>
@@ -119,13 +119,13 @@
                             <h6 class="mainbannerText_kr">연간 유기동물 수 약 13만 마리,</h6>
                             <h6 class="mainbannerText_kr">버려진 생명들은 여전히 가족을 기다리고 있습니다.</h6>
                         </div>
-                        <div><a href="" class="mainActing">유기동물 보호 활동</a></div>
+                        <div><a href="javascript:void(0)" class="mainActing">유기동물 보호 활동</a></div>
                     </div>
                     <div class="main_back">
                     </div>
               </div>
               <!--메인배너 2번 영상-->
-              <div class="swiper-slide d-flex align-items-center">
+              <div class="swiper-slide d-flex align-items-center justify-content-between">
                     <div class="mainbannerLeft">
                         <div class="mb-4">
                             <h1 class="mainbannerText">모두가 행복한 공간으로,</h1>
@@ -134,7 +134,7 @@
                         <div class="mb-5">
                             <h6 class="mainbannerText_kr">“와요(WAYO)” 공식 유튜브 리뉴얼!</h6>
                         </div>
-                        <div><a href="" class="mainvideo">영상 더보기</a></div>
+                        <div><a href="javascript:void(0)" class="mainvideo">영상 더보기</a></div>
                     </div>
                     <div>
                         <iframe width="1242" height="700" class="mainbanner_Video" src="https://www.youtube.com/embed/RWRm1vHZN8A?si=KUt8OAz0PFLwfhsb" title="YouTube video player" 
@@ -143,7 +143,7 @@
                     </div>
               </div>
              <!-- 메인배너 3번 콜라보 -->
-              <div class="swiper-slide d-flex align-items-center">
+              <div class="swiper-slide d-flex align-items-center justify-content-between">
                     <div class="mainbannerLeft"> 
                         <div class="mb-4">
                             <img src="/img/img_je/main_collabo_text.png" alt="콜라보로고">  
@@ -155,7 +155,7 @@
                             <h6 class="mainbanner_text">이지세이프 클립+워킹세이프 스프레이 120ml 기간 한정 15%할인</h6>
                         </div>
                     </div>
-                    <div class="maincollabo_Box">
+                    <div>
                         <img src="//hyunjiq.github.io/petopia/img/img_je/main_collabo.jpg" alt="콜라보상품" class="maincollabo">
                     </div>
               </div>
@@ -163,20 +163,19 @@
             </div>
             <div class="swiper-pagination"></div>
           </div>
-
-           <!-- Swiper JS -->
+     
+    <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper("#jeMainswiper", {
-        // autoplay: {delay: 2500, },
+    const swiperje = new Swiper("#je_Mainswiper", {
+        autoplay: { delay: 3000, },
       pagination: {
-        el: ".swiper-pagination",
+        el: "#je_Mainswiper .swiper-pagination",
       },
     });
   </script>
-
     </section>
 
     <section id="main_service" class="container margin">
@@ -193,12 +192,11 @@
     <section id="live_review"></section>
     <section id="with_place"></section>
 
-
-    <section id="social_program" class="margin" >
+    <section id="social_program" class="margin">
         <div class="container">
             <h2>사회 공헌 프로그램</h2>
             <div class="row">
-                <div class="d-flex p-0" style="width:700px;">
+                <div class="col d-flex p-0 sp_je">
                     <!-- Swiper -->
                     <div class="swiper mySwiper" id="jeSwiper">
                         <div class="swiper-wrapper">
@@ -229,11 +227,11 @@
                     </div>
 
                 </div>
-            <!-- 프로그램 일정 -->
-                <div class="col ps-0" style="max-width: 700px;">
+                <!-- 프로그램 일정 -->
+                <div class="col ps-0 sp_je" >
                     <div class="d-flex justify-content-between align-items-center px-3 pe-3 box">
                         <h5 class="pt-1">프로그램 일정</h5>
-                        <span class="pt-1"><a href=""><h6>더보기</h6></a></span>
+                        <span class="pt-1"><a href="javascript:void(0)"><h6>더보기</h6></a></span>
                     </div>
                    
                         <ul class="spNews px-0 pb-0">
@@ -256,22 +254,23 @@
                 </div>
             </div>
         </div>
+
         <script>
-        const swiper = new Swiper('#jeSwiper', {
-        autoplay: {delay: 2500, },
-        loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
-    });
-</script>
+            const swiperjes = new Swiper('#jeSwiper', {
+            autoplay: { delay: 2500, },
+            loop: true,
+            pagination: {
+                el: '#jeSwiper .swiper-pagination',
+            },
+            navigation: {
+                nextEl: '#jeSwiper .swiper-button-next',
+                prevEl: '#jeSwiper .swiper-button-prev',
+            },
+            scrollbar: {
+                    el: '#jeSwiper .swiper-scrollbar',
+                },
+            });
+        </script>
     </section> 
     
     <section id="form_tag" class="margin">
@@ -281,7 +280,7 @@
             <div class="mt-1 mb-4 form_text">#집중케어 #펫케어 #펫팸족</div> 
             
         </div>
-        <div><img src="/img/img_je/form_tagg.png" alt="" class="form-img"></div>
+        <div><img src="/img/img_je/form_tagg.png" alt="" class="form_img"></div>
      </div>
 
 
@@ -298,9 +297,6 @@
             
         </div> 
     </section>
-
-
-
 
 
     <aside id="quik" class="d-flex align-items-center flex-column">

@@ -1,54 +1,55 @@
 @charset "UTF-8";
-#jeMainswiper {
+#main_slide_je {
+  padding-top: 65px;
+}
+#main_slide_je #je_Mainswiper {
   background-color: #F7F8FA;
   height: 700px;
 }
-#jeMainswiper .mainbannerLeft {
-  padding: 160px 50px 84px 85px;
+#main_slide_je #je_Mainswiper .mainbannerLeft {
+  padding: 160px 48px 84px 85px;
 }
-#jeMainswiper .mainbanner_Video, #jeMainswiper .maincollabo {
+#main_slide_je #je_Mainswiper .mainbanner_Video, #main_slide_je #je_Mainswiper .main_back, #main_slide_je #je_Mainswiper .maincollabo {
   position: relative;
   border-radius: 350px 0 0 0;
   border: none;
   right: 0;
   bottom: 0;
+  float: none;
 }
-#jeMainswiper .maincollabo_Box {
-  right: auto;
-}
-#jeMainswiper .main_back {
-  background-image: url(//hyunjiq.github.io/petopia/img/img_je/main_dog.jpg);
+#main_slide_je #je_Mainswiper .main_back {
+  background-image: url(/img/img_je/main_littledog.jpg);
   border-radius: 350px 0 0 0;
   border: none;
   background-size: contain;
   background-repeat: no-repeat;
   padding: 0;
   margin: 0;
-  width: 100%;
-  height: 100%;
+  width: 1242px;
+  height: 700px;
   box-sizing: border-box;
 }
-#jeMainswiper .mainbannerText_en {
+#main_slide_je #je_Mainswiper .mainbannerText_en {
   font-family: Quicksand;
   line-height: 70px;
   color: #3D71FF;
   font-weight: bold;
   font-size: 65px;
 }
-#jeMainswiper .mainbannerText_kr {
+#main_slide_je #je_Mainswiper .mainbannerText_kr {
   font-family: NotoSansKR;
   line-height: 23px;
   color: #3D71FF;
   font-size: 20px;
 }
-#jeMainswiper .mainbannerText {
+#main_slide_je #je_Mainswiper .mainbannerText {
   font-family: NotoSansKR;
   line-height: 51px;
   font-weight: bold;
   color: #3D71FF;
   font-size: 48px;
 }
-#jeMainswiper .mainActing, #jeMainswiper .mainvideo {
+#main_slide_je #je_Mainswiper .mainActing, #main_slide_je #je_Mainswiper .mainvideo {
   text-decoration: none;
   color: white;
   background-color: #6A92FE;
@@ -57,27 +58,33 @@
   width: 212px;
   height: 58px;
 }
-#jeMainswiper .mainbanner_text {
+#main_slide_je #je_Mainswiper .mainvideo {
+  padding: 1rem;
+}
+#main_slide_je #je_Mainswiper .mainbanner_text {
   font-family: NotoSansKR;
   font-size: 16px;
   line-height: 19px;
   color: #666666;
 }
 
+#social_program .sp_je {
+  width: 700px;
+}
 #social_program #jeSwiper {
   border-radius: 12px;
   margin-right: 20px;
   height: 346px;
   margin-bottom: 180px;
 }
-#social_program #jeSwiper .sp_text {
+#social_program .sp_text {
   position: absolute;
   left: 20px;
   bottom: 10px;
   color: white;
   font-size: 30px;
 }
-#social_program #jeSwiper .slide-overlay {
+#social_program .slide-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -85,23 +92,23 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* 검정색에 투명도 조절 */
 }
-#social_program #jeSwiper .swiper-button-next,
-#social_program #jeSwiper .swiper-button-prev {
+#social_program .swiper-button-next,
+#social_program .swiper-button-prev {
   position: absolute;
   color: white;
   margin-top: 120px;
 }
-#social_program #jeSwiper .swiper-button-prev {
+#social_program .swiper-button-prev {
   left: 590px;
 }
-#social_program #jeSwiper .swiper-button-next::after,
-#social_program #jeSwiper .swiper-button-prev::after {
+#social_program .swiper-button-next::after,
+#social_program .swiper-button-prev::after {
   font-size: 2rem;
 }
 
 .box {
   border-radius: 12px;
-  background-color: #B5C9FF;
+  background-color: #b5c9ff;
   padding: 8px 0;
   margin-bottom: 13px;
 }
@@ -113,19 +120,20 @@
 .libox {
   height: 60px;
   margin-bottom: 13px;
-  background-color: #F7F8FA;
+  background-color: #f7f8fa;
   border-radius: 12px;
   padding-right: 10px;
 }
+
 .libox .sp-text {
   font-size: 10px;
 }
+
 .libox .sp-style:hover {
   text-decoration: underline;
 }
 
 #form_tag {
-  max-width: 1920px;
   height: 868px;
   background-color: #D3DFFF;
 }
