@@ -139,6 +139,12 @@
 
 }
 #ft{
+    .ft_menu{
+        .ft_menu_li{
+            border-right: 1px solid #666;
+            line-height: 1;
+        }
+    }
     .ft-icon{
         li{
             background: #ddd;
