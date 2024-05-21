@@ -1,11 +1,3 @@
-#hd .lnb .searchIcon {
-  font-size: 1.3rem;
-  line-height: 1.1;
-}
-#hd .lnb .personIcon {
-  font-size: 1.6rem;
-  line-height: 0;
-}
 #hd {
   width: 100vw;
   z-index: 100;
