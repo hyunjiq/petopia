@@ -2,10 +2,9 @@
 #jeMainswiper {
   background-color: #F7F8FA;
   height: 700px;
-  max-width: 1920px;
 }
 #jeMainswiper .mainbannerLeft {
-  padding: 160px 50px 114px 85px;
+  padding: 160px 50px 84px 85px;
 }
 #jeMainswiper .mainbanner_Video, #jeMainswiper .maincollabo {
   position: relative;
@@ -14,15 +13,20 @@
   right: 0;
   bottom: 0;
 }
+#jeMainswiper .maincollabo_Box {
+  right: auto;
+}
 #jeMainswiper .main_back {
   background-image: url(//hyunjiq.github.io/petopia/img/img_je/main_dog.jpg);
   border-radius: 350px 0 0 0;
   border: none;
-  padding-top: 53.36%;
-  height: 0;
-  width: 1242px;
   background-size: contain;
   background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
 }
 #jeMainswiper .mainbannerText_en {
   font-family: Quicksand;
