@@ -54,11 +54,11 @@
 
 </head>
 <body>
-    <header id="hd" class="d-flex justify-content-between position-fixed bg-white align-items-center px-5">
-        <h1 class="mb-0"><a class="d-block" href="#"><img class="logo_img d-block" src="/petopia/img/logo.png" alt="와요로고"></a></h1>
+    <header id="hd" class="d-flex justify-content-between position-fixed align-items-center px-5">
+        <h1 class="mb-0"><a id="hd_h1" class="d-block" href="#hd"><img class="logo_img d-block" src="./img/logo-04.svg" alt="와요로고"></a></h1>
         <ul class="d1 d-flex gnb mb-0 p-0 ">
             <li class="d1_li position-relative">
-                <a class="d1_a" href="">펫시터가 와요</a>
+                <a class="d1_a" href="#">펫시터가 와요</a>
                 <ul class="d2 position-absolute ps-0">
                     <li class="d2_li"><a href="">방문 돌봄</a></li>
                     <li class="d2_li"><a href="">집중 호스피스</a></li>
@@ -68,21 +68,21 @@
                 </ul>
             </li>
             <li class="d1_li position-relative">
-                <a class="d1_a" href="">훈련사</a>
+                <a class="d1_a" href="#">훈련사</a>
                 <ul class="d2 position-absolute ps-0">
                     <li class="d2_li"><a href="">훈련사 소개</a></li>
                     <li class="d2_li"><a href="">훈련사에게 물어봐</a></li>
                 </ul>
             </li>
             <li class="d1_li position-relative">
-                <a class="d1_a" href="">플레이스</a>
+                <a class="d1_a" href="#">플레이스</a>
                 <ul class="d2 position-absolute ps-0">
                     <li class="d2_li"><a href="">입점 문의</a></li>
                     <li class="d2_li"><a href="">매장 찾기</a></li>
                 </ul>
             </li>
             <li class="d1_li position-relative">
-                <a class="d1_a" href="">사회공헌</a>
+                <a class="d1_a" href="#">사회공헌</a>
                 <ul class="d2 position-absolute ps-0">
                     <li class="d2_li"><a href="">봉사활동</a></li>
                     <li class="d2_li"><a href="">지식 나눔</a></li>
@@ -90,14 +90,14 @@
                 </ul>
             </li>
             <li class="d1_li position-relative">
-                <a class="d1_a" href="">커뮤니티</a>
+                <a class="d1_a" href="#">커뮤니티</a>
                 <ul class="d2 position-absolute ps-0">
                     <li class="d2_li"><a href="">실시간 후기</a></li>
                     <li class="d2_li"><a href="">구독 서비스</a></li>
                 </ul>
             </li>
             <li class="d1_li position-relative">
-                <a class="d1_a" href="">펫트너</a>
+                <a class="d1_a" href="#">펫트너</a>
                 <ul class="d2 position-absolute ps-0">
                     <li class="d2_li"><a href="">펫시터 지원</a></li>
                     <li class="d2_li"><a href="">훈련사 지원</a></li>
@@ -151,11 +151,25 @@
                     fShow.classList.remove("d-flex");
                     fShow.classList.add("d-none");
                 });
-
-
-        </script>
-    </header> 
-
+        </script>        
+    </header>  
+    <div id="hd_ex" class="d-none ex_off">
+        <div class="ex_con hd_ex_logo">
+            <p>svg 이미지 사용</p>
+        </div>
+        <div class="ex_con hd_ex_menu">
+            <p>마우스 오버시 색이 변경 됨<br>전체 메뉴 나옴</p>
+        </div>
+        <div class="ex_con hd_ex_icon">
+            <div class="ex_con ex_con_div">
+                <p>1</p>
+                <p class="p_right">1. 검색버튼 누르면 검색 창이 뜸<br>2. 로그인 아이콘</p>
+            </div>
+            <div class="ex_con">
+                <p>2</p>
+            </div>
+        </div>
+    </div>  
     <section id="main_slide_je">
         <div class="swiper mySwiper" id="je_Mainswiper">
             <div class="swiper-wrapper">
@@ -197,7 +211,7 @@
               <div class="swiper-slide d-flex align-items-center justify-content-between">
                     <div class="mainbannerLeft"> 
                         <div class="mb-4">
-                            <img src="/petopia/img/img_je/main_collabo_text.png" alt="콜라보로고">  
+                            <img src="/img/img_je/main_collabo_text.png" alt="콜라보로고">  
                         </div>
                         <div class="mb-5">
                             <h1 class="mainbannerText mb-3">콜라보 5월 한정 이벤트</h1>
@@ -207,7 +221,7 @@
                         </div>
                     </div>
                     <div>
-                        <img src="/petopia/img/img_je/main_collabo.jpg" alt="콜라보상품" class="maincollabo">
+                        <img src="/img/img_je/main_collabo.jpg" alt="콜라보상품" class="maincollabo">
                     </div>
               </div>
 
@@ -226,32 +240,31 @@
     });
   </script>
     </section>
-
     <section id="main_service" class="margin">
         <div class="container ">
         <h2>주요 서비스</h2>
             <ul class="row px-0">
                 <li class="col-lg-3 col-6 mb-3">
                     <a href="" class="d-block ">
-                        <img src="/petopia/img/img_sh/service1.jpg" class="w-100" alt="돌봄">
+                        <img src="/img/img_sh/service1.jpg" class="w-100" alt="돌봄">
                         <span class="ms_div">방문돌봄</span>
                     </a>
                 </li>
                 <li class="col-lg-3 col-6 mt-lg-5 mb-3">
                     <a href="" class="d-block ">
-                        <img src="/petopia/img/img_sh/service2.jpg" class="w-100" alt="산책">
+                        <img src="/img/img_sh/service2.jpg" class="w-100" alt="산책">
                         <span class=" ms_div">방문산책</span>
                     </a>
                 </li>
                 <li class="col-lg-3 col-6">
                     <a href="" class="d-block ">
-                        <img src="/petopia/img/img_sh/service3.jpg" class="w-100" alt="훈련">
+                        <img src="/img/img_sh/service3.jpg" class="w-100" alt="훈련">
                         <span class="ms_div">방문훈련</span>
                     </a>
                 </li>
                 <li class="col-lg-3 col-6 mt-lg-5">
                     <a href="" class="d-block ">
-                        <img src="/petopia/img/img_sh/service4.jpg" class="w-100" alt="더보기">
+                        <img src="/img/img_sh/service4.jpg" class="w-100" alt="더보기">
                         <span class="ms_div">더보기</span>
                     </a>
                 </li>
@@ -261,15 +274,14 @@
     <section id="live_review" class="margin ">
         <div class="container">
             <h2>실시간 후기</h2>
-            <img src="/petopia/img/img_sh/live_review.jpg" alt="" class="">
+            <img src="/img/img_sh/live_review.jpg" alt="" class="">
         </div>
     </section>
     <section id="with_place" class="margin">
         <div class="container px-0">
-            <img src="/petopia/img/hj_img/sectionPlace.jpg" alt="" class="sectionPlace">
+            <img src="/img/hj_img/sectionPlace.jpg" alt="" class="sectionPlace">
         </div>        
     </section>
-
     <section id="social_program" class="margin">
         <div class="container">
             <h2>사회 공헌 프로그램</h2>
@@ -281,20 +293,20 @@
                             <div class="swiper-slide">
                                 <div class="slide-overlay"></div>
                                 <div class="sp_text">유기견 봉사활동</div>
-                                <img src="/petopia/img/img_je/sp_volunteer.jpg" alt="유기견봉사활동">
+                                <img src="/img/img_je/sp_volunteer.jpg" alt="유기견봉사활동">
 
                             </div>
 
                             <div class="swiper-slide"> 
                                 <div class="slide-overlay"></div>
                                 <div class="sp_text">배우 김효진x와요 특별한 인터뷰</div>
-                                <img src="/petopia/img/img_je/sp_interview.jpg" alt="특별인터뷰">
+                                <img src="/img/img_je/sp_interview.jpg" alt="특별인터뷰">
                             </div>
 
                             <div class="swiper-slide">
                                 <div class="slide-overlay"></div>
                                 <div class="sp_text">유기동물 보호소 산책봉사</div>
-                                <img src="/petopia/img/img_je/sp_walkingvolunteer.jpg" alt="보호소 산책봉사">
+                                <img src="/img/img_je/sp_walkingvolunteer.jpg" alt="보호소 산책봉사">
                             </div>
 
                         </div>
@@ -349,8 +361,7 @@
                 },
             });
         </script>
-    </section> 
-    
+    </section>     
     <section id="form_tag" class="margin">
      <div class="container">
         <div>
@@ -358,12 +369,11 @@
             <div class="mt-1 mb-4 form_text">#집중케어 #펫케어 #펫팸족</div> 
             
         </div>
-        <div><img src="/petopia/img/img_je/form_tagg.png" alt="" class="form_img"></div>
+        <div><img src="/img/img_je/form_tagg.png" alt="" class="form_img"></div>
      </div>
 
 
-    </section>
-    
+    </section>    
     <section id="app_download" class="app_bg1 app_bg2 app_bg3">
        
         <div class="container d-flex align-items-center justify-content-between" id="jeAppbanner">
@@ -377,7 +387,7 @@
     </section>
     <aside id="quik" class="d-flex align-items-center flex-column">
         <i id="quikBtn">
-            <img src="/petopia/img/hj_img/fixed_dog.png" alt="퀵버튼">
+            <img src="/img/hj_img/fixed_dog.png" alt="퀵버튼">
             <span class="visually-hidden">퀵버튼</span>
         </i>
         <ul id="quikMenu" class="d-none px-1 pb-2 mb-0">
@@ -400,8 +410,7 @@
                 <span class="visually-hidden">위로가기</span>
             </a>
         </div>
-    </aside>
-    <script>
+        <script>
             const quikBtn = document.getElementById("quikBtn");
             const quikMenu = document.getElementById("quikMenu");      
                 let status = true;
@@ -415,7 +424,23 @@
                     }
                 });
             
-    </script>     
+        </script>
+    </aside>
+    <!-- <aside id="intro_btn">
+        <ul>
+            <li class="li_btn"><a id="hd-btn" href="#hd">헤더</a></li>
+            <li class="li_btn"><a id="slide-btn" href="#main_slide_je">배너</a></li>
+            <li class="li_btn"><a id="service-btn" href="#main_service">서비스</a></li>
+            <li class="li_btn"><a id="review-btn" href="#live_review">리뷰</a></li>
+            <li class="li_btn"><a id="place-btn" href="#with_place">장소</a></li>
+            <li class="li_btn"><a id="social-btn" href="#social_program">봉사</a></li>
+            <li class="li_btn"><a id="form-btn" href="#form_tag">폼태그</a></li>
+            <li class="li_btn"><a id="app-btn" href="#app_download">앱다운</a></li>
+            <li class="li_btn"><a id="quik-btn" href="#quik">퀵</a></li>
+            <li class="li_btn"><a id="ft-btn" href="#ft">푸터</a></li>
+        </ul>
+    </aside> -->
+         
     <footer id="ft" class="py-5">
         <div class="container d-flex justify-content-between px-0">
             <div class="ft_right">
@@ -442,10 +467,23 @@
                 </ul>
             </div>
             <div class="ft_left d-flex align-items-end">
-                <h1><a href="javascript:void(0)"><img src="/petopia/img/logo.png" alt=""></a></h1>
+                <h1><a href="javascript:void(0)"><img src="./img/logo-04.svg" alt=""></a></h1>
             </div>
-        </div>
+            <div id="ft_ex" class="ex_off">
+                <div class="ex_con ft_ex_right">
+                    <p>svg 이미지 사용</p>
+                </div>
+                <div class="ex_con ft_ex_logo">
+                    <p>마우스 오버시 색이 변경 됨
+                </div>        
+            </div>
+        </div>        
     </footer>
-
+    
+    <div id="ex_bg" class="d-none">
+        <button id="ex_btn">                
+        </button>
+    </div>
+    
 </body>
 </html>
