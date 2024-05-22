@@ -493,6 +493,42 @@
         <button id="ex_btn">                
         </button>
     </div>
-    
+    <script>
+        //배경과 버튼
+        const exBtn = document.getElementById('ex_btn');
+        const exBg = document.getElementById('ex_bg');
+        //모든 컨텐츠
+        const exOff = document.querySelectorAll('.ex_off');
+        //컨텐츠마다 아이디
+        //const exHd = document.getElementById('hd_ex');
+        //컨텐츠 버튼
+        const hdH1 = document.getElementById('hd_h1');
+        
+        hdH1.addEventListener('click', function(event) {
+            event.preventDefault();
+
+                    exBg.classList.add('d-block');
+                    exBg.classList.remove('d-none');
+                    exOff.forEach(function(element) {
+                        element.classList.add('d-flex');
+                        element.classList.remove('d-none');
+                    });
+                    
+                });
+        
+        exBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            exBg.classList.add('d-none');
+            exBg.classList.remove('d-block');
+            exOff.forEach(function(element) {
+                element.classList.add('d-none');
+                element.classList.remove('d-flex');
+            });
+            
+        });
+
+
+    </script>
 </body>
 </html>
