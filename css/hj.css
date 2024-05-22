@@ -1,9 +1,11 @@
 #hd {
   width: 100vw;
   z-index: 100;
+  background-color: rgba(255, 255, 255, 0.7529411765);
+  backdrop-filter: blur(15px);
 }
 #hd h1 img {
-  height: 2rem;
+  height: 2.5rem;
 }
 #hd .d1:hover:before {
   content: "";
@@ -40,7 +42,7 @@
   padding: 1rem 2rem;
 }
 #hd .d1 .d1_li .d1_a {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 #hd .d1 .d1_li .d2 {
   top: 100%;
@@ -131,17 +133,97 @@
   color: #666;
 }
 
-#ft .ft_menu .ft_menu_li {
+#ft .ft_right .ft_menu .ft_menu_li {
   border-right: 1px solid #666;
   line-height: 1;
 }
-#ft .ft-icon li {
+#ft .ft_right .ft-icon li {
   background: #ddd;
   font-size: 1.7rem;
   line-height: 1;
   border-radius: 0.5rem;
   padding: 0.3rem;
 }
-#ft .ft-icon li a {
+#ft .ft_right .ft-icon li a {
   color: #999;
+}
+#ft .ft_left h1 img {
+  height: 4rem;
+}
+
+.ex_con {
+  border: 1px dotted #fff;
+  margin: 0.5rem;
+  color: #fff;
+  white-space: nowrap;
+}
+.ex_con p {
+  position: absolute;
+  top: 100%;
+}
+
+#hd_ex {
+  position: fixed;
+  z-index: 10001;
+  justify-content: space-between;
+  width: 100vw;
+}
+#hd_ex .hd_ex_logo {
+  width: 12rem;
+  height: 3rem;
+}
+#hd_ex .hd_ex_menu {
+  width: 50rem;
+  height: 3rem;
+}
+#hd_ex .hd_ex_icon {
+  width: 8rem;
+  height: 3rem;
+  display: flex;
+  position: relative;
+  border: 0;
+}
+#hd_ex .hd_ex_icon div {
+  width: 3rem;
+  height: 3rem;
+  margin: 0.1rem;
+}
+#hd_ex .hd_ex_icon div .p_right {
+  right: 110%;
+  top: 0;
+}
+
+#ft_ex {
+  position: absolute;
+  z-index: 10001;
+}
+#ft_ex div {
+  width: 20rem;
+  height: 2rem;
+  margin: 0.1rem;
+}
+#ft_ex .ft_ex_right p {
+  top: 0;
+  left: 110%;
+}
+
+#ex_bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+}
+#ex_bg #ex_btn {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-x-lg' viewBox='0 0 16 16'%3E%3Cpath d='M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z'/%3E%3C/svg%3E");
+  background-color: transparent;
+  border: 0;
+  width: 3rem;
+  height: 3rem;
+  background-size: 100%;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
 }
