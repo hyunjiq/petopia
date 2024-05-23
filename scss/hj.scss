@@ -185,6 +185,60 @@
 
     }
 }
+#team_info{
+    z-index: 10001;
+    width: 100vw;
+    img{
+        display: block;
+        margin: 5rem auto 0;
+        height: 6rem;
+    }
+    .info_wrap{        
+        width: 1200px;
+        margin: 0 auto;
+        .all_info{
+            .all_img{                
+                padding: 1rem;
+                background-repeat: no-repeat;
+                background-color: #AAC1FF;
+                background-position: center;
+                width: 20rem;
+                height: 20rem;
+                border-radius: 20rem;
+                margin: 3rem auto 0;
+                
+            }
+            .hj_img{
+                background-image: url(../img/hj_img.png);
+            }
+            .sh_img{
+                background-image: url(../img/sh_img.png);
+            }
+            .je_img{
+                background-image: url(../img/je_img.png);
+            }
+            span{
+                margin-top: 1rem;
+                font-size: 1.5rem;
+                font-weight: 600;
+                display: block;
+                text-align: center;
+                color: #fff;
+            }
+        }
+    }
+    p{
+        color: #fff;
+        text-align: center;
+    }
+    .info_p1{
+        margin-top: 4rem;
+        font-size: 2rem;
+    }
+    .info_p2{
+        font-size: 1.4rem;
+    }
+}
 #hd_ex{
     position:fixed;
     z-index: 10001;
@@ -316,15 +370,16 @@
         }
     }
 }
-#ex_bg{
+#ex_bg{background-color: rgba(0,0,0,.5);}
+#info_bg{background-color: rgba(0,0,0,.85);}
+.all_bg{
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,.5);
     z-index: 10000;
-    #ex_btn{
+    .all_btn{
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-x-lg' viewBox='0 0 16 16'%3E%3Cpath d='M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z'/%3E%3C/svg%3E");
         background-color: transparent;
         border: 0;

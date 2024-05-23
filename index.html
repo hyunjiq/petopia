@@ -41,7 +41,7 @@
     <link rel="stylesheet" href="//hyunjiq.github.io/petopia/css/common.min.css">
     <link rel="stylesheet" href="//hyunjiq.github.io/petopia/css/sh.min.css">
     <link rel="stylesheet" href="//hyunjiq.github.io/petopia/css/je.min.css">
-    <link rel="stylesheet" href="//hyunjiq.github.io/petopia/css/hj.min.css">
+    <link rel="stylesheet" href="./css/hj.min.css">
     <title>WAYO</title>
     
 
@@ -58,7 +58,7 @@
         <h1 class="mb-0"><a id="hd_h1" class="d-block" href="#"><img class="logo_img d-block" src="./img/logo-04.svg" alt="와요로고"></a></h1>
         <ul class="d1 d-flex gnb mb-0 p-0 ">
             <li class="d1_li position-relative">
-                <a class="d1_a" href="#">펫시터가 와요</a>
+                <a class="d1_a" id="info_click" href="#">펫시터가 와요</a>
                 <ul class="d2 position-absolute ps-0">
                     <li class="d2_li"><a href="">방문 돌봄</a></li>
                     <li class="d2_li"><a href="">집중 호스피스</a></li>
@@ -152,7 +152,28 @@
                     fShow.classList.add("d-none");
                 });
         </script>        
-    </header>  
+    </header>
+    <div id="team_info" class="position-fixed d-none">
+        <img src="//hyunjiq.github.io/petopia/img/logo-04.svg" alt="펫토피아와요">
+        <div class="info_wrap d-flex">
+            <div class="col hj_info all_info">
+                <div class="hj_img all_img"></div>
+                <span>이현지</span>
+            </div>
+            <div class="col sh_info all_info">
+                <div class="sh_img all_img"></div>
+                <span>문세현</span>
+            </div>
+            <div class="col je_info all_info">
+                <div class="je_img all_img"></div>
+                <span>정주은</span>
+            </div>
+        </div>
+        <p class="info_p1">#펫팸족 #반려동물  #펫케어 #반려가구천만시대</p>
+        <p class="info_p2">반려동물을 키우는 가구에게 전문적이고 신뢰할 수 있는 돌봄 환경을 제공하며,<br>
+            다양한 부가 서비스를 통해 반려동물과 그 주인의 삶의 질을 향상시키고자 한다.<br>
+            반려동물과 주인의 행복한 공존을 지원하는 것이 와요 사이트의 주요 목적이다.</p>
+    </div>
     <div id="hd_ex" class="d-none hd_quik position-fixed justify-content-between">
         <div class="ex_con hd_ex_logo">
             <p>svg 이미지 사용</p>
@@ -563,35 +584,67 @@
         </div>        
     </footer>
     
-    <div id="ex_bg" class="d-none">
-        <button id="ex_btn">                
+    <div id="ex_bg" class="d-none all_bg">
+        <button id="ex_btn" class="all_btn">                
+        </button>
+    </div>
+    <div id="info_bg" class="d-none all_bg">
+        <button id="info_btn" class="all_btn">                
         </button>
     </div>
     <script>
-        //배경과 버튼
+        //컨텐츠 배경과 닫기 버튼
         const exBtn = document.getElementById('ex_btn');
-        const exBg = document.getElementById('ex_bg');        
+        const exBg = document.getElementById('ex_bg');  
+        //팀소개 배경과 닫기 버튼
+        const infoBtn = document.getElementById('info_btn'); 
+        const infoBg = document.getElementById('info_bg');     
         //모든 컨텐츠
         const exOff = document.querySelectorAll('.ex_off');
         //헤터, 퀵 컨텐츠
         const exHQOff = document.querySelectorAll('.hd_quik');
-        //컨텐츠마다 아이디
-        //const exHd = document.getElementById('hd_ex');
+        //팀소개 컨텐츠
+        const tInfo = document.getElementById('team_info');
         //컨텐츠 버튼
         const hdH1 = document.getElementById('hd_h1');
         //헤더, 퀵 버튼
         const exHQBtn = document.getElementById('hd_log');
+        //팀소개 버튼
+        const teamBtn = document.getElementById('info_click');
         
+
+
+        //팀소개 버튼 클릭시 팀소개랑 배경나옴
+        teamBtn.addEventListener('click', function(event){
+            event.preventDefault();
+
+            infoBg.classList.add('d-block');
+            infoBg.classList.remove('d-none');
+            tInfo.classList.add('d-block');
+            tInfo.classList.remove('d-none');
+        });
+
+        //닫기버튼 클릭시 팀소개 닫힘
+        infoBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            infoBg.classList.add('d-none');
+            infoBg.classList.remove('d-block');
+            tInfo.classList.add('d-none');
+            tInfo.classList.remove('d-block');
+            
+        });
+
         //로고클릭시 컨텐츠랑 배경나옴
         hdH1.addEventListener('click', function(event) {
             event.preventDefault();
 
-                exBg.classList.add('d-block');
-                exBg.classList.remove('d-none');
-                exOff.forEach(function(element) {
-                    element.classList.add('d-block');
-                    element.classList.remove('d-none');
-                });
+            exBg.classList.add('d-block');
+            exBg.classList.remove('d-none');
+            exOff.forEach(function(element) {
+                element.classList.add('d-block');
+                element.classList.remove('d-none');
+            });
                     
         });
 
