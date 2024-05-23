@@ -175,21 +175,21 @@
 
 
 .ex_con {
-    border: 1px dotted #fff;
+    border: 2px dotted #fff;
     margin: .5rem;
     color: #fff;
     white-space: nowrap;
+    font-size: 1.5rem;
     p{  
         position: absolute;
-        top:100%
+
     }
 }
 #hd_ex{
-    position:fixed;
     z-index: 10001;
-    // display: flex;
-    justify-content: space-between;
-    width: 100vw;    
+    // display: flex;    
+    width: 100vw;
+    p{top:100%}    
     .hd_ex_logo{
         width: 12rem;
         height: 3rem;
@@ -201,9 +201,6 @@
     .hd_ex_icon{
         width: 8rem;
         height: 3rem;
-        display: flex;
-        position: relative;
-        border: 0;
         div{
             width: 3rem;
             height: 3rem;
@@ -216,12 +213,45 @@
         }
     }    
 }
+#place_ex{
+    top: 0;
+    z-index: 10001;
+    .ex_con_p1{
+        width: 90rem;
+        height: 37rem;
+        left: -1rem;
+        p{
+            position: absolute;
+            bottom: 100%;
+        }
+    }
+    .ex_con_p2{
+        width: 16rem;
+        height: 23rem;
+        left: 0;
+        top: 8rem;
+        p{
+            position: absolute;
+            top:0;
+            left:calc( 100% + 1rem);
+        }
+    }
+    .ex_con_p3{
+        width: 48.5rem;
+        height: 23rem;
+        right: -5.7rem;
+        top: 8rem;
+        p{
+            position: absolute;
+            bottom:100%;
+            left:1rem;
+        }
+    }
+}
 #aside_ex{
-    position: fixed;
     bottom: 1rem;
     right: .5rem;
     z-index: 10001;
-    display: flex;
     flex-direction: column;
     .aside_ex1{        
     width: 5.5rem;
@@ -246,25 +276,28 @@
     }
 }
 #ft_ex{
-    position: absolute;
-    z-index: 10001;
-    display: flex;
-    justify-content: space-between;
-    div{
-        width: 23rem;
-        height: 2rem;
-        margin: .1rem;             
-    }
+    z-index: 10001;       
     .ft_ex_right{
-        display: flex;
         flex-direction: column;
-        border: 0;
-        div{
+        border: 0;        
+        .ex_con{            
             position: relative;
+            left: -1.5rem;
+            
             p{  
                 top: 0;
                 left: 105%;                  
             }  
+        }
+        .ex_con_ft1{
+            width: 22.5rem;
+            height: 2rem;
+            top:-1.5rem;
+        }
+        .ex_con_ft2{
+            width: 10rem;
+            height: 3rem;
+            top:7rem;
         }
         
     }
