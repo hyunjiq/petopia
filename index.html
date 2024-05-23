@@ -153,17 +153,17 @@
                 });
         </script>        
     </header>  
-    <div id="hd_ex" class="d-none hd_quik">
+    <div id="hd_ex" class="d-none hd_quik position-fixed justify-content-between">
         <div class="ex_con hd_ex_logo">
             <p>svg 이미지 사용</p>
         </div>
         <div class="ex_con hd_ex_menu">
-            <p>마우스 오버시 색이 변경 됨<br>전체 메뉴 나옴</p>
+            <p>마우스 hover시 색이 변경 됨<br>전체 메뉴 나옴</p>
         </div>
-        <div class="ex_con hd_ex_icon">
+        <div class="ex_con hd_ex_icon d-flex position-relative border-0">
             <div class="ex_con ex_con_div">
                 <p>1</p>
-                <p class="p_right">1. 검색버튼 누르면 검색 창이 뜸<br>2. 로그인 아이콘</p>
+                <p class="p_right">1. 검색버튼 누르면 검색 창이 뜸<br>2. 로그인 페이지로 이동</p>
             </div>
             <div class="ex_con">
                 <p>2</p>
@@ -307,8 +307,21 @@
         </div>
     </section>
     <section id="with_place" class="margin">
-        <div class="container px-0">
+        <div class="container px-0 position-relative">
             <img src="//hyunjiq.github.io/petopia/img/hj_img/sectionPlace.jpg" alt="" class="sectionPlace">
+            <div id="place_ex" class="ex_off container px-0 position-absolute d-none">
+                <div class="d-flex justify-content-between">
+                    <div class="ex_con ex_con_p1 position-absolute">
+                        <p>1 번째 스와이퍼</p>
+                    </div>
+                    <div class="ex_con ex_con_p2 position-absolute">
+                        <p>1 번째 스와이퍼 <br>페이지네이션 스타일 수정 </p>
+                    </div>
+                    <div class="ex_con ex_con_p3 position-absolute">
+                        <p>2 번째 스와이퍼 <br> 슬라이드를 누르면 border가 생기고 각 장소의 이미지가 보여짐</p>
+                    </div>
+                </div>                  
+            </div>
         </div>        
     </section>
     <section id="social_program" class="margin">
@@ -497,32 +510,17 @@
             
         </script>        
     </aside>
-    <div id="aside_ex"  class="hd_quik d-none">
+    <div id="aside_ex"  class="hd_quik d-none position-fixed">
         <div class="ex_con aside_ex1">
-            <p>퀵 버튼</p>
+            <p>토글 되는 퀵 버튼</p>
         </div>
         <div class="ex_con aside_ex2 my-0">
             <p>챗상담, 인스타바로가기</p>
         </div>
         <div class="ex_con aside_ex3">
-            <p>탑버튼</p>
+            <p>상위로이동 하는 탑버튼</p>
         </div>
-    </div>
-    <!-- <aside id="intro_btn">
-        <ul>
-            <li class="li_btn"><a id="hd-btn" href="#hd">헤더</a></li>
-            <li class="li_btn"><a id="slide-btn" href="#main_slide_je">배너</a></li>
-            <li class="li_btn"><a id="service-btn" href="#main_service">서비스</a></li>
-            <li class="li_btn"><a id="review-btn" href="#live_review">리뷰</a></li>
-            <li class="li_btn"><a id="place-btn" href="#with_place">장소</a></li>
-            <li class="li_btn"><a id="social-btn" href="#social_program">봉사</a></li>
-            <li class="li_btn"><a id="form-btn" href="#form_tag">폼태그</a></li>
-            <li class="li_btn"><a id="app-btn" href="#app_download">앱다운</a></li>
-            <li class="li_btn"><a id="quik-btn" href="#quik">퀵</a></li>
-            <li class="li_btn"><a id="ft-btn" href="#ft">푸터</a></li>
-        </ul>
-    </aside> -->
-         
+    </div>         
     <footer id="ft" class="py-5">
         <div class="container d-flex justify-content-between px-0">
             <div class="ft_right">
@@ -551,21 +549,16 @@
             <div class="ft_left d-flex align-items-end">
                 <h1><a href="javascript:void(0)"><img src="//hyunjiq.github.io/petopia/img/logo-04.svg" alt=""></a></h1>
             </div>
-            <div id="ft_ex" class="ex_off container px-0">
-                <div class="ex_con ft_ex_right">
-                    <div class="ex_con">
-                        <p>하단 메뉴</p>                        
+            <div id="ft_ex" class="ex_off container px-0 d-none position-absolute">
+                <div class="ex_con ft_ex_right d-flex ">
+                    <div class="ex_con ex_con_ft1">
+                        <p>하단 메뉴 클릭시 서브페이지 이동</p>                        
                     </div>
-                    <div class="ex_con">
-                        <p>회사정보</p>                        
+                    <div class="ex_con ex_con_ft2">
+                        <p>각 sns 페이지로 이동</p>                        
                     </div>
-                    <div class="ex_con">
-                        <p>회사정보</p>                        
-                    </div>
-                </div>
-                <div class="ex_con ft_ex_logo">
-                    <p>로고</p>     
-                </div>        
+                </div>     
+                 
             </div>
         </div>        
     </footer>
@@ -596,7 +589,7 @@
                 exBg.classList.add('d-block');
                 exBg.classList.remove('d-none');
                 exOff.forEach(function(element) {
-                    element.classList.add('d-flex');
+                    element.classList.add('d-block');
                     element.classList.remove('d-none');
                 });
                     
