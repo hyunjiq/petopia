@@ -55,7 +55,7 @@
 </head>
 <body>
     <header id="hd" class="d-flex justify-content-between position-fixed align-items-center px-5">
-        <h1 class="mb-0"><a id="hd_h1" class="d-block" href="#hd"><img class="logo_img d-block" src="./img/logo-04.svg" alt="와요로고"></a></h1>
+        <h1 class="mb-0"><a id="hd_h1" class="d-block" href="#"><img class="logo_img d-block" src="./img/logo-04.svg" alt="와요로고"></a></h1>
         <ul class="d1 d-flex gnb mb-0 p-0 ">
             <li class="d1_li position-relative">
                 <a class="d1_a" href="#">펫시터가 와요</a>
@@ -124,7 +124,7 @@
                 </a>
             </li>
             <li class="mx-2 personIcon">
-                <a href="#">
+                <a id="hd_log" href="#">
                     <i class="bi bi-person"></i>
                     <span class="visually-hidden">로그인</span>
                 </a>
@@ -153,7 +153,7 @@
                 });
         </script>        
     </header>  
-    <div id="hd_ex" class="d-none ex_off">
+    <div id="hd_ex" class="d-none hd_quik">
         <div class="ex_con hd_ex_logo">
             <p>svg 이미지 사용</p>
         </div>
@@ -433,8 +433,19 @@
                     }
                 });
             
-        </script>
+        </script>        
     </aside>
+    <div id="aside_ex"  class="hd_quik d-none">
+        <div class="ex_con aside_ex1">
+            <p>퀵 버튼</p>
+        </div>
+        <div class="ex_con aside_ex2 my-0">
+            <p>챗상담, 인스타바로가기</p>
+        </div>
+        <div class="ex_con aside_ex3">
+            <p>탑버튼</p>
+        </div>
+    </div>
     <!-- <aside id="intro_btn">
         <ul>
             <li class="li_btn"><a id="hd-btn" href="#hd">헤더</a></li>
@@ -478,12 +489,20 @@
             <div class="ft_left d-flex align-items-end">
                 <h1><a href="javascript:void(0)"><img src="//hyunjiq.github.io/petopia/img/logo-04.svg" alt=""></a></h1>
             </div>
-            <div id="ft_ex" class="ex_off d-none">
+            <div id="ft_ex" class="ex_off container px-0">
                 <div class="ex_con ft_ex_right">
-                    <p>svg 이미지 사용</p>
+                    <div class="ex_con">
+                        <p>하단 메뉴</p>                        
+                    </div>
+                    <div class="ex_con">
+                        <p>회사정보</p>                        
+                    </div>
+                    <div class="ex_con">
+                        <p>회사정보</p>                        
+                    </div>
                 </div>
                 <div class="ex_con ft_ex_logo">
-                    <p>마우스 오버시 색이 변경 됨
+                    <p>로고</p>     
                 </div>        
             </div>
         </div>        
@@ -496,26 +515,45 @@
     <script>
         //배경과 버튼
         const exBtn = document.getElementById('ex_btn');
-        const exBg = document.getElementById('ex_bg');
+        const exBg = document.getElementById('ex_bg');        
         //모든 컨텐츠
         const exOff = document.querySelectorAll('.ex_off');
+        //헤터, 퀵 컨텐츠
+        const exHQOff = document.querySelectorAll('.hd_quik');
         //컨텐츠마다 아이디
         //const exHd = document.getElementById('hd_ex');
         //컨텐츠 버튼
         const hdH1 = document.getElementById('hd_h1');
+        //헤더, 퀵 버튼
+        const exHQBtn = document.getElementById('hd_log');
         
+        //로고클릭시 컨텐츠랑 배경나옴
         hdH1.addEventListener('click', function(event) {
             event.preventDefault();
 
-                    exBg.classList.add('d-block');
-                    exBg.classList.remove('d-none');
-                    exOff.forEach(function(element) {
-                        element.classList.add('d-flex');
-                        element.classList.remove('d-none');
-                    });
-                    
+                exBg.classList.add('d-block');
+                exBg.classList.remove('d-none');
+                exOff.forEach(function(element) {
+                    element.classList.add('d-flex');
+                    element.classList.remove('d-none');
                 });
-        
+                    
+        });
+
+        //헤더 퀵 부분 컨텐츠나옴
+        exHQBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            exBg.classList.add('d-block');
+            exBg.classList.remove('d-none');
+            exHQOff.forEach(function(element) {
+                element.classList.add('d-flex');
+                element.classList.remove('d-none');
+            });
+            
+        });
+
+        //닫기버튼 클릭시 다 닫힘
         exBtn.addEventListener('click', function(event) {
             event.preventDefault();
 
@@ -525,9 +563,14 @@
                 element.classList.add('d-none');
                 element.classList.remove('d-flex');
             });
+            exHQOff.forEach(function(element) {
+                element.classList.add('d-none');
+                element.classList.remove('d-flex');
+            });
             
         });
 
+        
 
     </script>
 </body>

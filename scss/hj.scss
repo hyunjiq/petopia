@@ -216,19 +216,64 @@
         }
     }    
 }
+#aside_ex{
+    position: fixed;
+    bottom: 1rem;
+    right: .5rem;
+    z-index: 10001;
+    display: flex;
+    flex-direction: column;
+    .aside_ex1{        
+    width: 5.5rem;
+    height: 5rem;
+
+    }
+    .aside_ex2{        
+        width: 5.5rem;
+        height: 7.5rem;
+    }
+    .aside_ex3{        
+        width: 5.5rem;
+        height:4rem;
+    }
+    .ex_con{
+        position: relative;
+        p{  
+            position: absolute;
+            top: 0;
+            right: 105%;
+        }
+    }
+}
 #ft_ex{
     position: absolute;
     z-index: 10001;
+    display: flex;
+    justify-content: space-between;
     div{
-        width: 20rem;
+        width: 23rem;
         height: 2rem;
         margin: .1rem;             
     }
     .ft_ex_right{
-        p{  
+        display: flex;
+        flex-direction: column;
+        border: 0;
+        div{
+            position: relative;
+            p{  
+                top: 0;
+                left: 105%;                  
+            }  
+        }
+        
+    }
+    .ft_ex_logo{
+        position: relative;
+        p{
             top: 0;
-            left: 110%;                  
-        }  
+            right: 105%;
+        }
     }
 }
 #ex_bg{
