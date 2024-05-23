@@ -229,14 +229,32 @@
     }
     p{
         color: #fff;
-        text-align: center;
+        text-align: center;        
     }
+    
     .info_p1{
         margin-top: 4rem;
-        font-size: 2rem;
+        font-size: 2rem;        
+        .marker{
+            position: relative;
+            margin: 0 1rem;
+            &:before{
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;                
+                width: 100%;
+                background:#3d71ff;
+                height: 100%;
+            }
+            span{
+                position: relative;
+            }
+        }
     }
     .info_p2{
         font-size: 1.4rem;
+        letter-spacing: 0.085rem;
     }
 }
 #hd_ex{
