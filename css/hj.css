@@ -328,6 +328,13 @@
   top: 0;
   right: 105%;
 }
+#aside_ex .emmet {
+  border: 0;
+}
+#aside_ex .emmet p {
+  top: -2.5rem;
+  right: 0.5em;
+}
 
 #ft_ex {
   z-index: 10001;
@@ -349,6 +356,9 @@
   width: 22.5rem;
   height: 2rem;
   top: -1.5rem;
+}
+#ft_ex .ft_ex_right .ex_con_ft1 .emmet {
+  top: 4rem;
 }
 #ft_ex .ft_ex_right .ex_con_ft2 {
   width: 10rem;
