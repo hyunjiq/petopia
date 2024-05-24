@@ -1,6 +1,6 @@
 @charset "UTF-8";
 #main_slide_je {
-  padding-top: 65px;
+  padding-top: 65px !important;
 }
 #main_slide_je #je_Mainswiper {
   background-color: #F7F8FA;
