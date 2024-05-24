@@ -43,6 +43,7 @@
   font-size: 20px;
 }
 #main_slide_je #je_Mainswiper .mainbannerText {
+  white-space: nowrap;
   font-family: NotoSansKR;
   line-height: 51px;
   font-weight: bold;
@@ -200,14 +201,14 @@
 
 .je_main1 {
   z-index: 10001;
-  border: 2px dotted white;
+  border: 5px solid #92ff5d;
   width: 100px;
   height: 50px;
-  top: 56%;
+  top: 60%;
   left: 5%;
 }
 .je_main1 p {
-  color: white;
+  color: #92ff5d;
   bottom: 70%;
   font-size: 1.5rem;
   width: 500px;
@@ -215,14 +216,14 @@
 
 .je_main2 {
   z-index: 10001;
-  border: 2px dotted white;
+  border: 5px solid #92ff5d;
   width: 1242px;
   height: 700px;
   top: 7%;
   right: 0;
 }
 .je_main2 p {
-  color: white;
+  color: #92ff5d;
   bottom: -7%;
   font-size: 1.5rem;
   width: 500px;
@@ -230,35 +231,35 @@
 
 .je_app {
   z-index: 10001;
-  border: 2px dotted white;
+  border: 5px solid #92ff5d;
   width: 220px;
   height: 50px;
   top: 40%;
   right: 18%;
 }
 .je_app p {
-  color: white;
+  color: #92ff5d;
   bottom: 70%;
   font-size: 1.5rem;
 }
 
 .je_form1 {
   z-index: 10001;
-  border: 2px dotted white;
+  border: 5px solid #92ff5d;
   width: 550px;
   height: 500px;
   top: 21%;
   left: 5%;
 }
 .je_form1 p {
-  color: white;
+  color: #92ff5d;
   bottom: 97%;
   font-size: 1.5rem;
 }
 
 .je_form2 {
   z-index: 10001;
-  border: 2px dotted white;
+  border: 5px solid #92ff5d;
   width: 550px;
   height: 50px;
   top: 48%;
@@ -266,7 +267,7 @@
   font-size: 1.5rem;
 }
 .je_form2 p {
-  color: white;
+  color: #92ff5d;
   bottom: -30%;
   right: -50%;
   font-size: 1.5rem;
@@ -274,43 +275,43 @@
 
 .je_form3 {
   z-index: 10001;
-  border: 2px dotted white;
+  border: 5px solid #92ff5d;
   width: 220px;
   height: 50px;
   top: 75%;
   right: 19%;
 }
 .je_form3 p {
-  color: white;
-  bottom: -101%;
+  color: #92ff5d;
+  top: 100%;
   font-size: 1.5rem;
 }
 
 .je_form4 {
   z-index: 10001;
-  border: 2px dotted white;
+  border: 5px solid #92ff5d;
   width: 220px;
   height: 30px;
   bottom: -1%;
   left: 2%;
 }
 .je_form4 p {
-  color: white;
-  bottom: -171%;
+  color: #92ff5d;
+  top: 100%;
   width: 350px;
   font-size: 1.5rem;
 }
 
 .je_form5 {
   z-index: 10001;
-  border: 2px dotted white;
+  border: 5px solid #92ff5d;
   width: 550px;
   height: 120px;
   top: 30%;
   right: 6%;
 }
 .je_form5 p {
-  color: white;
+  color: #92ff5d;
   top: -71%;
   width: 460px;
   font-size: 1.5rem;
@@ -318,14 +319,14 @@
 
 .je_form6 {
   z-index: 10001;
-  border: 2px dotted white;
+  border: 5px solid #92ff5d;
   width: 550px;
   height: 50px;
   top: 57%;
   right: 6%;
 }
 .je_form6 p {
-  color: white;
+  color: #92ff5d;
   width: 200px;
   bottom: -30%;
   right: -38%;
@@ -334,14 +335,14 @@
 
 .je_form7 {
   z-index: 10001;
-  border: 2px dotted white;
+  border: 5px solid #92ff5d;
   width: 550px;
   height: 50px;
   top: 66%;
   right: 6%;
 }
 .je_form7 p {
-  color: white;
+  color: #92ff5d;
   width: 200px;
   bottom: -110%;
   right: -38%;
@@ -350,30 +351,30 @@
 
 .je_social1 {
   z-index: 10001;
-  border: 2px dotted white;
+  border: 5px solid #92ff5d;
   width: 100px;
   height: 40px;
   bottom: 33%;
   left: 44%;
 }
 .je_social1 p {
-  color: white;
-  bottom: -220%;
+  color: #92ff5d;
+  top: 100%;
   width: 350px;
   font-size: 1.5rem;
 }
 
 .je_social2 {
   z-index: 10001;
-  border: 2px dotted white;
+  border: 5px solid #92ff5d;
   width: 300px;
   height: 300px;
   top: 17%;
   right: 13%;
 }
 .je_social2 p {
-  color: white;
-  top: -10%;
+  color: #92ff5d;
+  top: -12%;
   left: -20%;
   width: 500px;
   font-size: 1.5rem;
