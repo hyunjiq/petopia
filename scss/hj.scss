@@ -175,9 +175,9 @@
 
 
 .ex_con {
-    border: 2px dotted #fff;
+    border: 5px solid #92ff5d;
     margin: .5rem;
-    color: #fff;
+    color: #92ff5d;
     white-space: nowrap;
     font-size: 1.5rem;
     p{  
@@ -352,6 +352,13 @@
             right: 105%;
         }
     }
+    .emmet{
+        border: 0;
+        p{
+            top:-2.5rem;
+            right: .5em;
+        }
+    }
 }
 #ft_ex{
     z-index: 10001;       
@@ -372,6 +379,9 @@
             width: 22.5rem;
             height: 2rem;
             top:-1.5rem;
+            .emmet{
+                top:4rem;
+            }
         }
         .ex_con_ft2{
             width: 10rem;
@@ -388,7 +398,7 @@
         }
     }
 }
-#ex_bg{background-color: rgba(0,0,0,.5);}
+#ex_bg{background-color: rgba(0,0,0,.7);}
 #info_bg{background-color: rgba(0,0,0,.85);}
 .all_bg{
     position: fixed;
