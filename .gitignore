@@ -1,6 +1,5 @@
 **/data/
 **/*.csv
 **/*.xml
-**/*.json
 **/petopia/
 .vscode

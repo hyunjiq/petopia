@@ -1,0 +1,106 @@
+[
+    {
+        "text": "펫시터가 와요",
+        "href": "/petsitter.html",
+        "gnb_ul_li": [
+            {
+                "text": "방문 돌봄",
+                "href": "/homecare.html"
+            },
+            {
+                "text": "집중 호스피스",
+                "href": "/pethos.html"
+            },
+            {
+                "text": "펫 플래닛",
+                "href": "/longcare.html"
+            },
+            {
+                "text": "웨딩케어",
+                "href": "/weddingcare.html"
+            },
+            {
+                "text": "안심 픽업 & 드랍",
+                "href": "/pickupndrop.html"
+            }
+        ]
+    },
+    {
+        "text": "훈련사",
+        "href": "/petrainer.html",
+        "gnb_ul_li": [
+            {
+                "text": "훈련사 소개",
+                "href": "/whopetrainer.html"
+            },
+            {
+                "text": "훈련사에게 물어봐",
+                "href": "/qnapetrainer.html"
+            }
+        ]
+    },
+    {
+        "text": "플레이스",
+        "href": "/petplace.html",
+        "gnb_ul_li": [
+            {
+                "text": "입점 문의",
+                "href": "/askpartnership.html"
+            },
+            {
+                "text": "매장 찾기",
+                "href": "/findshop.html"
+            }
+        ]
+    },
+    {
+        "text": "사회공헌",
+        "href": "/petsocial.html",
+        "gnb_ul_li": [
+            {
+                "text": "봉사활동",
+                "href": "/volunteer.html"
+            },
+            {
+                "text": "지식나눔",
+                "href": "/sharing.html"
+            },
+            {
+                "text": "심리상담",
+                "href": "/mindcare.html"
+            }
+        ]
+    },
+    {
+        "text": "커뮤니티",
+        "href": "/community.html",
+        "gnb_ul_li": [
+            {
+                "text": "실시간 후기",
+                "href": "/review.html"
+            },
+            {
+                "text": "구독 서비스",
+                "href": "/subscription.html"
+            }
+        ]
+    },
+    {
+        "text": "펫트너",
+        "href": "/pettner.html",
+        "gnb_ul_li": [
+            {
+                "text": "펫시터 지원",
+                "href": "/petsitterapply.html"
+            },
+            {
+                "text": "훈련사 지원",
+                "href": "/pettrainerapply.html"
+            },
+            {
+                "text": "산책케어 지원",
+                "href": "/petwalkapply.html"
+            }
+        ]
+    }
+]
