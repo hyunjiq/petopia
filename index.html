@@ -52,13 +52,47 @@
     <!-- 달력 -->
     <link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.0/main.min.css" rel="stylesheet">
 
+      <!-- 헤더 상단 내비게이션  -->
+      <script>
+        $(document).ready(function(){
+            $.ajax({
+                url :"./json/hd.json",
+                type : "GET",
+                dataType : "json",
+                success : function(data){
+
+                    let navi = "";
+
+                    data.forEach((ele,i) => {
+
+                        navi += `<li class="${ele["cls"]["li"]}"><a class="${ele["cls"]["a"]}" href="${ele["href"]}">${ele["text"]}</a>`
+                        navi += `<ul class="${ele["cls"]["ul"]}">`
+
+                            ele["d2_li"].forEach(function(el,id){
+                                navi += `<li class="${el["cls"]["li"]}"><a href="${el["href"]}">${el["text"]}</a>`
+                            });
+                        
+                        navi += `</ul>`;
+                        navi += `</li>`;
+
+                    });
+ 
+                    $("#hd .d1").html(navi);
+                },
+            
+                error : ""
+            })
+
+        })
+    </script>
+
 </head>
 <body>
     <!-- header#hd>h1>a>img^^ul>li*6>a+ul>li>a^^^^ul>li>form+a*2^li -->
-    <!-- <header id="hd" class="d-flex justify-content-between position-fixed align-items-center px-5">
+    <header id="hd" class="d-flex justify-content-between position-fixed align-items-center px-5">
         <h1 class="mb-0"><a id="hd_h1" class="d-block" href="#"><img class="logo_img d-block" src="/petopia/img/logo-04.svg" alt="와요로고"></a></h1>
         <ul class="d1 d-flex gnb mb-0 p-0 ">
-            <li class="d1_li position-relative">
+            <!-- <li class="d1_li position-relative">
                 <a class="d1_a" id="info_click" href="#">펫시터가 와요</a>
                 <ul class="d2 position-absolute ps-0">
                     <li class="d2_li"><a href="">방문 돌봄</a></li>
@@ -104,7 +138,7 @@
                     <li class="d2_li"><a href="">훈련사 지원</a></li>
                     <li class="d2_li"><a href="">산책 케어 지원</a></li>
                 </ul>
-            </li>
+            </li> -->
         </ul>
         <ul class="d-flex lnb mb-0 p-0">
             <li class="mx-2 searchIcon d-flex">
@@ -153,7 +187,7 @@
                     fShow.classList.add("d-none");
                 });
         </script>        
-    </header> -->
+    </header>
     <div id="team_info" class="position-fixed d-none">
         <img src="/petopia/img/logo-04.svg" alt="펫토피아와요">
         <div class="info_wrap d-flex">
